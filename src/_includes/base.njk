@@ -1,0 +1,50 @@
+{% set base_url = "http://localhost:8080" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Description" content="Internetauftritt der NaturFreunde Tecklenburg">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ base_url }}/bundle.css">
+
+</head>
+<body>
+
+{{ content | safe }}
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-8"><h4 class="footer-title">NaturFreunde Tecklenburg</h4>
+        <ul>
+          <li><i class="ico-mail"></i><a
+                    href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a></li>
+          <li><i class="ico-instagram"></i><a href="https://instagram.com/naturfreunde.tecklenburg" target="_blank">@naturfeunde.tecklenburg</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Links:</h4>
+        <ul>
+          <li><i class="ico-tree"></i><a target="_blank" rel="nofollow" href="https://www.outdoorsport-proteuto.de/">www.outdoorsport-proteuto.de</a>
+          </li>
+          <li><i class="ico-tree"></i><a target="_blank" rel="nofollow" href="https://www.naturfreunde.de/">www.naturfreunde.de</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 text-start">
+        <ul class="mt-5">
+          <li><a class="text-black-50" href="/impressum">Impressum</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="{{ base_url }}/bundle.js"></script>
+</body>
+</html>
