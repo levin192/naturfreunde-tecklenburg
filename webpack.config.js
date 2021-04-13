@@ -53,5 +53,5 @@ module.exports = {
       new CssMinimizerPlugin(),
     ],
   },
-  watch: true
+  //watch: true
 };
