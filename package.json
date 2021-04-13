@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy & webpack",
     "webpack": "webpack",
-    "start": "eleventy --serve",
-    "eleventy": "eleventy"
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
