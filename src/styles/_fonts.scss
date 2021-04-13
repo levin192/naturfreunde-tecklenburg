@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/balsamiq-sans-v3-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/balsamiq-sans-v3-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('../fonts/open-sans-v18-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/open-sans-v18-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+  font-family : 'Ubuntu';
+  font-style  : normal;
+  font-weight : 400;
+  src         : local(''),
+  url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/ubuntu-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ubuntu-500 - latin */
+@font-face {
+  font-family : 'Ubuntu';
+  font-style  : normal;
+  font-weight : 500;
+  src         : local(''),
+  url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/ubuntu-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family : 'ico';
+  src         : local(''),
+  url('../fonts/ico.woff2?61208404') format('woff2'),
+  url('../fonts/ico.woff?61208404') format('woff');
+  font-weight : normal;
+  font-style  : normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ico';
+    src: url('../font/ico.svg?61208404#ico') format('svg');
+  }
+}
+*/
+
+[class^="ico-"]:before, [class*=" ico-"]:before {
+  font-family             : "ico";
+  font-style              : normal;
+  font-weight             : normal;
+  speak                   : never;
+
+  display                 : inline-block;
+  text-decoration         : inherit;
+  width                   : 1em;
+  margin-right            : .2em;
+  text-align              : center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant            : normal;
+  text-transform          : none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height             : 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left             : .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.ico-user:before {
+  content : '\e800';
+}
+/* '' */
+.ico-phone:before {
+  content : '\e801';
+}
+/* '' */
+.ico-users:before {
+  content : '\e802';
+}
+/* '' */
+.ico-mail:before {
+  content : '\f0e0';
+}
+/* '' */
+.ico-instagram:before {
+  content : '\f16d';
+}
+/* '' */
+.ico-tree:before {
+  content : '\f1bb';
+}
+/* '' */
+.ico-bicycle:before {
+  content : '\f206';
+}
+/* '' */
+.ico-facebook:before {
+  content : '\f230';
+}
+/* '' */
+.ico-whatsapp:before {
+  content : '\f232';
+}
+/* '' */
