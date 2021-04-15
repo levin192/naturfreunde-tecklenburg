@@ -1,0 +1,39 @@
+---
+title: Naturfreunde Tecklenburg - Neuigkeit
+layout: base.njk
+pagination:
+  data: neuigkeiten
+  size: 1
+  alias: news
+permalink: 'news/{{ news.Title | slug }}/'
+---
+<div class="container">
+  <picture>
+    <source media="(min-width: 991px)" srcset="{{ news.TeaserImage.formats.large.url }}">
+    <source media="(min-width: 576px)" srcset="{{ frontpage.TeaserImage.formats.medium.url }}">
+    <source srcset="{{ news.TeaserImage.formats.small.url }}">
+    <img src="{{ news.TeaserImage.formats.small.url }}" alt="" class="">
+  </picture>
+  <h1>{{ news.Title }}</h1>
+  {% markdown %}
+    {{ news.Text }}
+  {% endmarkdown %}
+  {% set gallery = news.Gallery %}
+  {% for image in gallery %}
+    {% if image.formats.medium.url %}
+      {% set thumbnailLink = image.formats.medium.url %}
+    {% else %}
+      {% set thumbnailLink = image.url %}
+    {% endif %}
+    <a href="{{ image.url }}">
+      <img src="{{ thumbnailLink }}" alt="{{ image.formats.alternativeText }}">
+      {% if image.caption %}
+        <span>{{ image.caption }}</span>
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>
+
+<pre>
+  Styling Folgt. Danke Bitte
+</pre>

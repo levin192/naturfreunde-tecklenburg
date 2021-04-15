@@ -1,0 +1,14 @@
+---
+title: Naturfreunde Tecklenburg - Neuigkeiten
+layout: base.njk
+pagination:
+  data: neuigkeiten
+  size: 100
+  alias: neuigkeiten
+---
+
+<ul>
+  {% for news in neuigkeiten %}
+    <li><a href="/news/{{ news.Title | slug }}/">{{ news.Title }}</a></li>
+  {% endfor %}
+</ul>

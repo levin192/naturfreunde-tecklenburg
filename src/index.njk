@@ -1,17 +1,17 @@
 ---
-title: NaturFreunde Tecklenburg
+title: Naturfreunde Tecklenburg
 layout: base.njk
 ---
 <div class="title-content-box">
-  <h1>NaturFreunde Tecklenburg</h1>
+  <h1>{{ frontpage.Title }}</h1>
   <p class="attention">Vorstellungsrunde per Zoom am 20.04. <br>
     Link folgt!
   </p>
   <picture>
-    <source media="(min-width: 991px)" srcset="images/desktop.jpg">
-    <source media="(min-width: 576px)" srcset="images/tablet.jpg">
-    <source srcset="images/mobile.jpg">
-    <img src="images/mobile.jpg" alt="" class="title-img">
+    <source media="(min-width: 991px)" srcset="{{ frontpage.HeaderImage.formats.large.url }}">
+    <source media="(min-width: 576px)" srcset="{{ frontpage.HeaderImage.formats.medium.url }}">
+    <source srcset="{{ frontpage.HeaderImage.formats.small.url }}">
+    <img src="{{ frontpage.HeaderImage.formats.small.url }}" alt="" class="title-img">
   </picture>
 </div>
 <div class="gebirge">
@@ -39,17 +39,12 @@ layout: base.njk
   </div>
 </div>
 <main class="content">
+
   <div class="container">
     <section class="row mb-2 mb-md-5">
       <div class="col-md-8 offset-md-2">
         <img src="images/nfd-bildmarke.png" alt="NFD-Bildmarke" style="" class="img-fluid floating-img">
-        <h1>Wir stellen uns vor</h1>
-        <p>Die Ortsgruppe Naturfreunde Tecklenburg e.V. setzt sich im Bereich Tecklenburg/Brochterbeck für eine
-          naturverträgliche Nutzung des Teutoburger Waldes ein. Dabei setzen wir unseren Schwerpunkt auf den Bereich
-          Mountainbike. </p>
-        <p>
-          Wir vertreten die Interessen der Mountainbiker*innen vor Behörden, Waldbesitzern und Förstern, indem wir aktiv
-          den Dialog suchen. Wir werden vom Bundesverband der Naturfreunde unterstützt.</p>
+        {% markdown %}{{ frontpage.Content }}{% endmarkdown %}
       </div>
       <div class="mt-5">
         <figure class="figure">
@@ -118,18 +113,18 @@ layout: base.njk
     <section class="row gx-2">
       <div class="col-md-8 offset-md-2">
         <h2>Wie werde ich Mitglied?</h2>
-        <p>Momentan befinden wir uns noch in der Vereinsgründung und warten auf die Bestätigung des Amtsgerichts. Daher
-          kannst du derzeit leider noch kein Mitglied werden. Du kannst dich trotzdem schon per Mail ( <a
+        <p>Momentan befinden wir uns noch in der Vereinsgründung und warten auf die Bestätigung des Amtsgerichts.
+          Daher kannst du derzeit leider noch kein Mitglied werden. Du kannst dich trotzdem schon per Mail ( <a
                   href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a> ) bei
           uns melden. Wir schicken dir sobald wie möglich einen Mitgliedsantrag.</p>
         <div class="mt-5">
           <h2>Unser Vorstand:</h2>
-          <p>
-            Thomas Sprekelmeyer Heukamp (1. Vorstand) <br>
-            Julius Schmidt (2. Vorstand) <br>
-            Janka Bockolt (Schriftführerin) <br>
-            Julia Heukamp (Kassenwart)
-          </p>
+          <ul>
+            {% for mitglied in vorstand %}
+              <li>{{ mitglied.Name }}({{ mitglied.Rolle }})</li>
+            {% endfor %}
+          </ul>
+
         </div>
       </div>
     </section>
