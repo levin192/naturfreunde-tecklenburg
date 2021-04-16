@@ -1,10 +1,11 @@
 
 import AOS from 'aos';
+
 import 'aos/src/sass/aos.scss';
 import 'animate.css/animate.css'
-
-
 import '../styles/style.scss';
+
+
 
 AOS.init();
 
@@ -24,7 +25,7 @@ function onScrollChange(scrollPos) {
 
 }
 
-document.addEventListener('scroll', function (e) {
+document.addEventListener('scroll', function () {
   lastKnownScrollPosition = window.scrollY;
 
   if (!ticking) {
