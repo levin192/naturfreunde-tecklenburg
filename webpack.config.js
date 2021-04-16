@@ -8,7 +8,8 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: {
-    bundle: './src/js/index.js'
+    bundle: './src/js/index.js',
+    tilt: './src/js/tilt.js'
   },
   output: {
     filename: '[name].js',

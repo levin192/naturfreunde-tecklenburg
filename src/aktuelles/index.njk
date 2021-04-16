@@ -7,8 +7,31 @@ pagination:
   alias: neuigkeiten
 ---
 
-<ul>
-  {% for news in neuigkeiten %}
-    <li><a href="/news/{{ news.Title | slug }}/">{{ news.Title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <h1>Aktuelles</h1>
+  <div class="row gy-2 my-5">
+    {% for news in neuigkeiten %}
+      <div class="col-md-6 col-xl-3">
+        <div class="card news-card h-100 js-tilt" data-tilt data-tilt-max="5" data-tilt-speed="800">
+          {% set publishedDate = news.published_at  | replace("-", "/")  | replace("T", " ") | replace(r/ .*/g, "") %}
+          {% set publishedDate = publishedDate.split("/") | reverse | join('/') %}
+
+          {% set thumbnail = news.TeaserImage.formats.thumbnail %}
+          {% if thumbnail %}
+            <img src="{{ thumbnail.url }}" alt="{{ news.TeaserImage.alternativeText }}"
+                 loading="lazy" width="{{ thumbnail.width }}" height="{{ thumbnail.height }}" class="card-img-top">
+          {% endif %}
+          <div class="card-body d-flex flex-column">
+            <div class="news-card-date">{{ publishedDate }}</div>
+            <h5 class="card-title">{{ news.Title }}</h5>
+            <p class="card-text">{{ news.TeaserText }}</p>
+
+            <a href="/news/{{ news.Title | slug }}/" class="btn btn-secondary stretched-link mt-auto d-inline-block">Mehr
+              Lesen</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<script src="{{ '/tilt.js' | url }}"></script>

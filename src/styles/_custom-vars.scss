@@ -1,16 +1,27 @@
-$font-family-base : 'Ubuntu', sans-serif;
-$font-size-root   : 18px;
+$font-family-base  : 'Ubuntu', sans-serif;
+$font-size-root    : 18px;
+$border-radius     : .5rem;
+$border-width      : 2px;
 
-$grannysmith      : #B3D89C;
-$teagreen         : #D0EFB1;
-$opal             : #9DC3C2;
-$pewterblue       : #77A6B6;
-$queenblue        : #4D7298;
-$onyx             : #35393C;
+$grannysmith       : #B3D89C;
+$teagreen          : #D0EFB1;
+$opal              : #9DC3C2;
+$pewterblue        : #77A6B6;
+$queenblue         : #4D7298;
+$onyx              : #35393C;
 
-$nf_green         : #007758;
-$nf_red           : #E30513;
+$nf_green          : #007758;
+$nf_red            : #E30513;
 
+$primary           : $grannysmith;
+$secondary         : $nf_green;
+$body-color        : $onyx;
 
-$primary          : $grannysmith;
-$body-color       : $onyx;
+// cards
+
+$card-border-width : 0;
+
+//btns
+$btn-font-weight   : 600;
+$btn-font-family   : 'Open Sans';
+//$enable-gradients  : true;

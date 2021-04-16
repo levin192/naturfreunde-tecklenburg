@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy & webpack",
     "webpack": "webpack",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve & webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta2",
     "eleventy-plugin-error-overlay": "^0.1.2",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "vanilla-tilt": "^1.7.0"
   }
 }
