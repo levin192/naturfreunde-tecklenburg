@@ -1,10 +1,8 @@
-
 import AOS from 'aos';
 
 import 'aos/src/sass/aos.scss';
 import 'animate.css/animate.css'
 import '../styles/style.scss';
-
 
 
 AOS.init();
@@ -29,11 +27,10 @@ document.addEventListener('scroll', function () {
   lastKnownScrollPosition = window.scrollY;
 
   if (!ticking) {
-    window.requestAnimationFrame(function () {
+    window.requestAnimationFrame(() => {
       onScrollChange(lastKnownScrollPosition);
       ticking = false;
     });
-
     ticking = true;
   }
 });
