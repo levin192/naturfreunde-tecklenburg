@@ -1,4 +1,6 @@
 import AOS from 'aos';
+import bootstrap from 'bootstrap'
+
 
 import 'aos/src/sass/aos.scss';
 import 'animate.css/animate.css'
@@ -9,7 +11,9 @@ AOS.init();
 
 
 const sn = document.getElementById('stickyNav')
+const navBar = document.querySelector('.navbar')
 
+document.body.style.marginTop = navBar.offsetHeight + 'px'
 
 let lastKnownScrollPosition = 0;
 let ticking = false;

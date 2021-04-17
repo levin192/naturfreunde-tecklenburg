@@ -34,6 +34,7 @@
   "homepage": "https://github.com/levin192/naturfreunde-tecklenburg#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@popperjs/core": "^2.9.2",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.21.1",

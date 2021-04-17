@@ -116,10 +116,10 @@ body {
 
 .contact-wrap {
   z-index          : 999;
-  font-size        : 1.5rem;
+  font-size        : 1rem;
   position         : fixed;
-  top              : 30px;
-  right            : -460px;
+  top              : 70px;
+  right            : -318px;
   margin-left      : auto;
   padding          : 1rem;
   background-color : transparentize(white, .6);
@@ -142,7 +142,7 @@ body {
     }
   }
   i {
-    font-size    : 2rem;
+    font-size    : 1.3rem;
     color        : $opal;
     margin-right : 1rem;
   }
@@ -150,8 +150,24 @@ body {
     text-decoration : none;
   }
 }
+.vorstand-image {
+  width         : 46px;
+  height        : 46px;
+  object-fit    : cover;
+  border-radius : 100%;
+  margin-right  : 5px;
+}
+
 .spacer {
-  margin-bottom : 500px;
+  background-color : white;
+  z-index          : 1;
+  padding-bottom   : 100px;
+  @include media-breakpoint-up(md) {
+    padding-bottom : 200px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-bottom : 500px;
+  }
 }
 .footer-gebirge {
   position : absolute;
@@ -159,9 +175,11 @@ body {
 }
 
 footer {
+  position         : relative;
   margin-top       : auto;
   padding          : 0 0 60px;
   background-color : $opal;
+  z-index          : 2;
   ul {
     list-style    : none;
     margin-bottom : 0;
@@ -200,5 +218,14 @@ footer {
   .card-img-top {
     height     : 130px;
     object-fit : cover;
+  }
+}
+
+.navbar {
+  font-size : .75rem;
+  &-brand {
+    &-title {
+      font-size : .75rem;
+    }
   }
 }

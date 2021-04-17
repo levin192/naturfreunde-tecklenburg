@@ -4,7 +4,7 @@ layout: base.njk
 ---
 <div class="title-content-box">
   <h1>{{ frontpage.Title }}</h1>
-  <p class="attention" >Vorstellungsrunde per Zoom am 20.04. <br>
+  <p class="attention">Vorstellungsrunde per Zoom am 20.04. <br>
     Link folgt!
   </p>
   <picture>
@@ -32,12 +32,7 @@ layout: base.njk
       c-80,0-240,0-400,0s-320,0-480,0s-320,0-400,0H0V224z"/>
     </svg>
 </div>
-<div id="stickyNav" class="contact-wrap docked">
-  <div><i class="ico-mail"></i> <a href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a>
-  </div>
-  <div><i class="ico-instagram"></i><a target="_blank" href="https://instagram.com/naturfreunde.tecklenburg">@naturfreunde.tecklenburg</a>
-  </div>
-</div>
+
 <main class="content">
 
   <div class="container">
@@ -73,7 +68,7 @@ layout: base.njk
           </ul>
         </div>
       </div>
-      <div class="col-md-6 px-4 d-flex">
+      <div class="col-md-6 px-4 d-flex" id="ziele">
         <div class="my-auto">
           <h2>Unsere Ziele:</h2>
 
@@ -112,35 +107,34 @@ layout: base.njk
   <div class="container">
     <section class="row gx-2">
       <div class="col-md-8 offset-md-2">
-        <h2>Wie werde ich Mitglied?</h2>
-        <p>Momentan befinden wir uns noch in der Vereinsgründung und warten auf die Bestätigung des Amtsgerichts.
-          Daher kannst du derzeit leider noch kein Mitglied werden. Du kannst dich trotzdem schon per Mail ( <a
-                  href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a> ) bei
-          uns melden. Wir schicken dir sobald wie möglich einen Mitgliedsantrag.</p>
+        <div id="mitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
+          <p>Momentan befinden wir uns noch in der Vereinsgründung und warten auf die Bestätigung des Amtsgerichts.
+            Daher kannst du derzeit leider noch kein Mitglied werden. Du kannst dich trotzdem schon per Mail ( <a
+                    href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a> ) bei
+            uns melden. Wir schicken dir sobald wie möglich einen Mitgliedsantrag.</p>
+        </div>
         <div class="mt-5">
-          <h2>Unser Vorstand:</h2>
-          <ul>
-            {% for mitglied in vorstand %}
-              <li>{{ mitglied.Name }}({{ mitglied.Rolle }})</li>
-            {% endfor %}
-          </ul>
-
+          <div id="vorstand">
+            <h2>Unser Vorstand:</h2>
+            <ul>
+              {% for mitglied in vorstand %}
+                {% if mitglied.Image.formats.thumbnail %}
+                  {% set image = mitglied.Image.formats.thumbnail.url %}
+                {% elseif mitglied.Image.url %}
+                  {% set image = mitglied.Image.url %}
+                {% endif %}
+                <li>
+                  {% if mitglied.Image %}
+                    <img src="{{ image }}" alt="" class="vorstand-image"
+                         loading="lazy" width="46px" height="46px">
+                  {% endif %}
+                  {{ mitglied.Name }} ({{ mitglied.Rolle }})
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   </div>
-  <div class="my-5"></div>
-  <div class="spacer"></div>
-  <svg class="footer-gebirge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#B3D89C" fill-opacity="1"
-          d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,202.7C672,171,768,85,864,85.3C960,85,1056,171,1152,197.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-  </svg>
-  <svg class="footer-gebirge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#D0EFB1" fill-opacity="1"
-          d="M0,96L48,90.7C96,85,192,75,288,58.7C384,43,480,21,576,48C672,75,768,149,864,202.7C960,256,1056,288,1152,293.3C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-  </svg>
-  <svg class="footer-gebirge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#9DC3C2" fill-opacity="1"
-          d="M0,192L80,208C160,224,320,256,480,245.3C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-  </svg>
 </main>

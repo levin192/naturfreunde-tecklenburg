@@ -7,30 +7,35 @@ pagination:
   alias: news
 permalink: 'aktuelles/{{ news.Title | slug }}/'
 ---
-<div class="container">
-  <picture>
-    <source media="(min-width: 991px)" srcset="{{ news.TeaserImage.formats.large.url }}">
-    <source media="(min-width: 576px)" srcset="{{ frontpage.TeaserImage.formats.medium.url }}">
-    <source srcset="{{ news.TeaserImage.formats.small.url }}">
-    <img src="{{ news.TeaserImage.formats.small.url }}" alt="" class="">
-  </picture>
-  <h1>{{ news.Title }}</h1>
-  {% markdown %}
-    {{ news.Text }}
-  {% endmarkdown %}
-  {% set gallery = news.Gallery %}
-  {% for image in gallery %}
-    {% if image.formats.medium.url %}
-      {% set thumbnailLink = image.formats.medium.url %}
-    {% else %}
-      {% set thumbnailLink = image.url %}
-    {% endif %}
-    <a href="{{ image.url }}">
-      <img src="{{ thumbnailLink }}" alt="{{ image.formats.alternativeText }}">
-      {% if image.caption %}
-        <span>{{ image.caption }}</span>
+<main class="pt-5">
+  <div class="container d-flex flex-column">
+    <h1 class="mb-lg-5 md-3">{{ news.Title }}</h1>
+    <div class="">
+      {% if news.TeaserImage.formats.small %}
+       {% set image = news.TeaserImage.formats.small.url %}
+      {% else %}
+        {% set image = news.TeaserImage.url  %}
       {% endif %}
-    </a>
-  {% endfor %}
-</div>
+      <img src="{{ news.TeaserImage.formats.small.url }}" alt="" class="img-fluid floating-img ms-0 ms-lg-4">
 
+
+      {% markdown %}
+        {{ news.Text }}
+      {% endmarkdown %}
+      {% set gallery = news.Gallery %}
+      {% for image in gallery %}
+        {% if image.formats.medium.url %}
+          {% set thumbnailLink = image.formats.medium.url %}
+        {% else %}
+          {% set thumbnailLink = image.url %}
+        {% endif %}
+        <a href="{{ image.url }}">
+          <img src="{{ thumbnailLink }}" alt="{{ image.formats.alternativeText }}">
+          {% if image.caption %}
+            <span>{{ image.caption }}</span>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</main>

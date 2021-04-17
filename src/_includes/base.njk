@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +9,58 @@
 
 </head>
 <body>
+<header>
+  <nav class="navbar py-0 fixed-top navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="{{ '/' | url }}">
+        <img src="{{ '/images/nfd-bildmarke.svg' | url }}" alt="" width="30" height="24"
+             class="d-inline-block align-text-top">
+        <span class="navbar-brand-title ms-2">NaturFreunde Tecklenburg</span>
+      </a>
+      <button class="navbar-toggler border-0 py-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-md-4 ms-0">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/#ziele' | url }}">Ziele</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/#mitgliedWerden' | url }}">Mitglied werden</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/#vorstand' | url }}">Vorstand</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/aktuelles' | url }}">Aktuelles</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-  {{ content | safe }}
+{{ content | safe }}
 
+<div class="spacer"></div>
 <footer>
+  <div class="footer-gerbirge-wrap position-relative">
+    <svg class="footer-gebirge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#B3D89C" fill-opacity="1"
+            d="M0,128L48,138.7C96,149,192,171,288,192C384,213,480,235,576,202.7C672,171,768,85,864,85.3C960,85,1056,171,1152,197.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <svg class="footer-gebirge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#D0EFB1" fill-opacity="1"
+            d="M0,96L48,90.7C96,85,192,75,288,58.7C384,43,480,21,576,48C672,75,768,149,864,202.7C960,256,1056,288,1152,293.3C1248,299,1344,277,1392,266.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <svg class="footer-gebirge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#9DC3C2" fill-opacity="1"
+            d="M0,192L80,208C160,224,320,256,480,245.3C640,235,800,181,960,165.3C1120,149,1280,171,1360,181.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
+  </div>
+
   <div class="container">
     <div class="row">
 
@@ -43,6 +90,12 @@
     </div>
   </div>
 </footer>
+<div id="stickyNav" class="contact-wrap docked">
+  <div><i class="ico-mail"></i> <a href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a>
+  </div>
+  <div><i class="ico-instagram"></i><a target="_blank" href="https://instagram.com/naturfreunde.tecklenburg">@naturfreunde.tecklenburg</a>
+  </div>
+</div>
 <script src="{{ '/bundle.js' | url }}"></script>
 </body>
 </html>
