@@ -1,0 +1,26 @@
+
+.footer-gebirge {
+  position : absolute;
+  bottom   : 0;
+}
+
+footer {
+  position         : relative;
+  margin-top       : auto;
+  padding          : 0 0 60px;
+  background-color : $opal;
+  z-index          : 2;
+  ul {
+    list-style    : none;
+    margin-bottom : 0;
+    padding-left  : 0;
+    li {
+      padding-left   : 0;
+      padding-bottom : 1rem;
+      a {
+        color      : $nf_green;
+        list-style : none;
+      }
+    }
+  }
+}

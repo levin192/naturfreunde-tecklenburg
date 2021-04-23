@@ -68,7 +68,7 @@ layout: base.njk
           </ul>
         </div>
       </div>
-      <div class="col-md-6 px-4 d-flex" id="ziele">
+      <div class="col-md-6 px-4 d-flex anchor" id="ziele">
         <div class="my-auto">
           <h2>Unsere Ziele:</h2>
 
@@ -107,31 +107,39 @@ layout: base.njk
   <div class="container">
     <section class="row gx-2">
       <div class="col-md-8 offset-md-2">
-        <div id="mitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
+        <div class="anchor" id="mitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
           <p>Momentan befinden wir uns noch in der Vereinsgründung und warten auf die Bestätigung des Amtsgerichts.
             Daher kannst du derzeit leider noch kein Mitglied werden. Du kannst dich trotzdem schon per Mail ( <a
                     href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a> ) bei
             uns melden. Wir schicken dir sobald wie möglich einen Mitgliedsantrag.</p>
         </div>
-        <div class="mt-5">
-          <div id="vorstand">
+        <div class="my-5">
+          <div class="anchor" id="vorstand">
             <h2>Unser Vorstand:</h2>
-            <ul>
+            <div class="vorstand row mt-3 gy-4">
               {% for mitglied in vorstand %}
                 {% if mitglied.Image.formats.thumbnail %}
                   {% set image = mitglied.Image.formats.thumbnail.url %}
                 {% elseif mitglied.Image.url %}
                   {% set image = mitglied.Image.url %}
                 {% endif %}
-                <li>
-                  {% if mitglied.Image %}
-                    <img src="{{ image }}" alt="" class="vorstand-image"
-                         loading="lazy" width="46px" height="46px">
-                  {% endif %}
-                  {{ mitglied.Name }} ({{ mitglied.Rolle }})
-                </li>
+                <div class="vorstand-item col-xl-6">
+                  <div class="d-flex align-items-center">
+                    <div class="vorstand-picture">
+                      {% if mitglied.Image %}
+                        <img src="{{ image }}" alt="" class="vorstand-image"
+                             loading="lazy" width="88" height="88">
+                      {% else %}
+                        <div class="vorstand-placeholder"><span class="ico-user"></span></div>
+                      {% endif %}
+                    </div>
+                    <div class="vorstand-text">
+                      {{ mitglied.Name }}<br>({{ mitglied.Rolle }})
+                    </div>
+                  </div>
+                </div>
               {% endfor %}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

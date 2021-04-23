@@ -36,14 +36,14 @@
 //@import "bootstrap/badge";
 //@import "bootstrap/alert";
 //@import "bootstrap/progress";
-//@import "bootstrap/list-group";
+@import "bootstrap/list-group";
 //@import "bootstrap/close";
 //@import "bootstrap/toasts";
 //@import "bootstrap/modal";
 //@import "bootstrap/tooltip";
 //@import "bootstrap/popover";
 //@import "bootstrap/carousel";
-//@import "bootstrap/spinners";
+@import "bootstrap/spinners";
 
 // Helpers
 @import "bootstrap/helpers";
@@ -56,3 +56,7 @@
 @import "fonts";
 @import "typographie";
 @import "base";
+@import "components";
+@import "tns";
+@import "navigation/header";
+@import "navigation/footer";

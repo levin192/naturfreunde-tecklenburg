@@ -1,0 +1,24 @@
+.tns-outer {
+  position : relative;
+}
+.tns-nav {
+  position  : absolute;
+  bottom    : 5px;
+  z-index   : 1;
+  left      : 50%;
+  transform : translateX(-50%);
+  button {
+    padding          : 0;
+    width            : 12px;
+    height           : 12px;
+    border-radius    : 100%;
+    border           : solid white 2px;
+    box-shadow       : 0 5px 12px -2px rgba(0, 0, 0, 0.29);
+    background-color : transparent;
+    margin-left      : 4px;
+    margin-right     : 4px;
+    &.tns-nav-active {
+      background-color : transparentize(white, .2);
+    }
+  }
+}

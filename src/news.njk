@@ -7,35 +7,52 @@ pagination:
   alias: news
 permalink: 'aktuelles/{{ news.Title | slug }}/'
 ---
+{% set gallery = news.Gallery %}
+<link rel="stylesheet" href="{{ '/newsDetail.css' | url }}">
+{% if news.TeaserImage.formats.large.url %}
+  <div class="news-cover">
+    <img src="{{ news.TeaserImage.formats.large.url }}" alt="" class="news-cover-image">
+  </div>
+{% endif %}
+
 <main class="pt-5">
   <div class="container d-flex flex-column">
-    <h1 class="mb-lg-5 md-3">{{ news.Title }}</h1>
-    <div class="">
-      {% if news.TeaserImage.formats.small %}
-       {% set image = news.TeaserImage.formats.small.url %}
-      {% else %}
-        {% set image = news.TeaserImage.url  %}
+    <div class="row">
+      <div class=" {% if gallery.length > 0 %}col-lg-8{% else %}col-12{% endif %}">
+        <h1 class="mb-lg-5 md-3">{{ news.Title }}</h1>
+        <div class="news-text">
+          {% markdown %}{{ news.Text }}{% endmarkdown %}
+        </div>
+      </div>
+      {% if gallery.length > 0 %}
+        <div class="col-lg-4">
+          <div class="news-gallery-wrapper">
+            <div class="news-gallery-slider-controls d-none">
+              <div class="btn btn-gallery">
+                <div class="caret caret-left"></div>
+              </div>
+              <div class="btn  btn-gallery">
+                <div class="caret caret-right"></div>
+              </div>
+            </div>
+            <div class="news-gallery-slider">
+              {% for image in gallery %}
+                {% if image.formats.medium.url %}
+                  {% set thumbnailLink = image.formats.medium.url %}
+                {% else %}
+                  {% set thumbnailLink = image.url %}
+                {% endif %}
+                <a class="lightbox" href="{{ image.url }}" title="{% if image.caption %}{{ image.caption }}{% endif %}">
+                  <img src="{{ thumbnailLink }}" alt="{{ image.formats.alternativeText }}">
+                </a>
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
       {% endif %}
-      <img src="{{ news.TeaserImage.formats.small.url }}" alt="" class="img-fluid floating-img ms-0 ms-lg-4">
-
-
-      {% markdown %}
-        {{ news.Text }}
-      {% endmarkdown %}
-      {% set gallery = news.Gallery %}
-      {% for image in gallery %}
-        {% if image.formats.medium.url %}
-          {% set thumbnailLink = image.formats.medium.url %}
-        {% else %}
-          {% set thumbnailLink = image.url %}
-        {% endif %}
-        <a href="{{ image.url }}">
-          <img src="{{ thumbnailLink }}" alt="{{ image.formats.alternativeText }}">
-          {% if image.caption %}
-            <span>{{ image.caption }}</span>
-          {% endif %}
-        </a>
-      {% endfor %}
     </div>
   </div>
 </main>
+
+<script src="{{ '/newsDetail.js' | url }}"></script>
