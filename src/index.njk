@@ -4,9 +4,16 @@ layout: base.njk
 ---
 <div class="title-content-box">
   <h1>{{ frontpage.Title }}</h1>
-  <p class="attention">Vorstellungsrunde per Zoom am 20.04. <br>
-    Link folgt!
-  </p>
+  {% if frontpage.showInterferer %}
+    <p class="attention">
+      {{ frontpage.interfererText }}
+      {% if frontpage.interfererLink %}
+        <a href="{{ frontpage.interfererLink }}" target="_blank" class="stretched-link"
+           rel="nofollow"></a>
+      {% endif %}
+    </p>
+  {% endif %}
+
   <picture>
     <source media="(min-width: 991px)" srcset="{{ frontpage.HeaderImage.formats.large.url }}">
     <source media="(min-width: 576px)" srcset="{{ frontpage.HeaderImage.formats.medium.url }}">
@@ -34,7 +41,6 @@ layout: base.njk
 </div>
 
 <main class="content">
-
   <div class="container">
     <section class="row mb-2 mb-md-5">
       <div class="col-md-8 offset-md-2">
@@ -51,55 +57,45 @@ layout: base.njk
   </div>
   <div class="my-3"></div>
   <div class="container-fluid container-xxl">
+    {# Set Images for Boxes #}
+
+    {% set goalsImage = frontpage.goalsImage %}
+    {% if goalsImage.formats.medium %}
+      {% set goalsImageUrl = goalsImage.formats.medium.url %}
+    {% else %}
+      {% set goalsImageUrl = goalsImage.url %}
+    {% endif %}
+
+    {% set offeringsImage = frontpage.offeringsImage %}
+    {% if offeringsImage.formats.medium %}
+      {% set offeringsImageUrl = offeringsImage.formats.medium.url %}
+    {% else %}
+      {% set offeringsImageUrl = offeringsImage.url %}
+    {% endif %}
+
+    {# --- #}
     <section class="row gx-0 image-text-boxes">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="600" data-aos-offset="400">
-        <img src="images/box-1.jpg" alt="" class="box-image">
+        <img src="{{ offeringsImageUrl }}" alt="" class="box-image">
       </div>
 
       <div class="col-md-6 px-4 d-flex">
         <div class="my-auto">
           <h2>Wir bieten euch</h2>
-          <ul>
-            <li>Einen lokalen Ansprechpartner</li>
-            <li>Einen starken Bundesverband mit Erfahrung im Bereich MTB</li>
-            <li>Plattform zum Austausch und Kennenlernen</li>
-            <li>Eine partizipative Vereinsstruktur in der ihr euch aktiv einbringen könnt</li>
-            <li>Interessensvertretung auf politischer Ebene und im Kontakt mit Behörden</li>
-          </ul>
+          {% markdown %}{{ frontpage.offeringsText }}{% endmarkdown %}
         </div>
       </div>
       <div class="col-md-6 px-4 d-flex anchor" id="ziele">
         <div class="my-auto">
           <h2>Unsere Ziele:</h2>
-
-          <ul>
-            <li>Imagepflege der MTB-Community durch Öffentlichkeitsarbeit</li>
-            <li>Lobbyarbeit pro MTB auf kommunaler Ebene</li>
-            <li>Anlaufstelle zum Vermitteln und schlichten für unterschiedliche Waldnutzer*innen</li>
-            <li>Erhaltung und Pflege der Wege durch ehrenamtliches Engagement</li>
-            <li>Aufbau eines Vereinslebens vor Ort</li>
-          </ul>
-          <p>Langfristig möchten wir uns auch in diesen Bereichen engagieren:</p>
-          <ul>
-            <li>Jugendarbeit</li>
-            <li>Vereinsausfahrten</li>
-            <li>Einbindung in die Entwicklung eines Tourismuskonzeptes</li>
-          </ul>
+          {% markdown %}{{ frontpage.goalsList }}{% endmarkdown %}
         </div>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-duration="600">
-        <img src="images/box-2.jpg" alt="" class="box-image">
+        <img src="{{ goalsImageUrl }}" alt="" class="box-image">
       </div>
       <div class="col-md-8 offset-md-2 my-5">
-        <h1>Ziele der Ortsgruppe Naturfreunde Tecklenburg e.V.</h1>
-        <p>
-          Wir bieten Mountainbiker*innen eine Plattform, um miteinander in Kontakt zu treten, sich auszutauschen und
-          gemeinsam die Natur auf dem MTB zu genießen. Die Erhaltung und der Schutz der Natur steht für uns nicht im
-          Widerspruch zu unserem Anspruch diese betreten zu dürfen. <br>
-          Daher agieren wir als lokaler Ansprechpartner im Raum Tecklenburg/Brochterbeck für Waldbesitzer, Förster,
-          Wanderer und Behörden. Unsere Aktivitäten werden durch den Austausch mit anderen Vereinen, Initiativen,
-          Unternehmen und Einzelpersonen durch die Teilnahme an der IG Outdoorsport proTeuto vervollständigt.
-        </p>
+        {% markdown %}{{ frontpage.textAfter }}{% endmarkdown %}
       </div>
     </section>
   </div>
@@ -108,10 +104,7 @@ layout: base.njk
     <section class="row gx-2">
       <div class="col-md-8 offset-md-2">
         <div class="anchor" id="mitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
-          <p>Momentan befinden wir uns noch in der Vereinsgründung und warten auf die Bestätigung des Amtsgerichts.
-            Daher kannst du derzeit leider noch kein Mitglied werden. Du kannst dich trotzdem schon per Mail ( <a
-                    href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a> ) bei
-            uns melden. Wir schicken dir sobald wie möglich einen Mitgliedsantrag.</p>
+          {% markdown %}{{ frontpage.MitgliedWerdenText }}{% endmarkdown %}
         </div>
         <div class="my-5">
           <div class="anchor" id="vorstand">

@@ -98,7 +98,7 @@
 .title-content-box {
   position : sticky;
   top      : -33%;
-  @media (max-width : 1100px) {
+  @media (max-width : 1330px) {
     position : relative;
   }
   .attention {
@@ -111,6 +111,7 @@
     border-radius    : 3px;
     transform        : rotate(5deg);
     z-index          : 2;
+    max-width        : 360px;
     @media (max-width : 1100px) {
       position  : sticky;
       transform : rotate(0);
@@ -127,9 +128,10 @@
     z-index     : 2;
     font-family : 'Open Sans', sans-serif;
     font-weight : 600;
-    @media (max-width : 1100px) {
-      position  : relative;
+    @media (max-width : 1330px) {
+      position  : absolute;
       max-width : 370px;
+      top       : 100px;
     }
     &:after {
       content          : "";
@@ -143,7 +145,10 @@
   }
   .title-img {
     width      : 100%;
-    max-height : 80vh;
+    max-height : 400px;
+    @media (min-width : 1330px) {
+      max-height : 80vh;
+    }
     object-fit : cover;
   }
   &:after {
@@ -157,11 +162,13 @@
     opacity    : .5;
   }
 }
+
+
 .gebirge {
   position   : relative;
   height     : 40vh;
   margin-top : -20vh;
-  @media (max-width : 1100px) {
+  @media (max-width : 1330px) {
     display : none;
   }
   svg {

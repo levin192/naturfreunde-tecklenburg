@@ -5,4 +5,30 @@
       font-size : .75rem;
     }
   }
+  &-nav {
+    letter-spacing : 0.05em;
+    @include media-breakpoint-up(md) {
+      .nav-item {
+        position : relative;
+        &:after {
+          content          : "";
+          height           : 50%;
+          width            : 1px;
+          background-color : transparent;
+          position         : absolute;
+          right            : 0;
+          top              : 50%;
+          transform        : translateY(-50%);
+          z-index          : 2;
+          border-right     : 1px solid transparentize(white, .5);
+        }
+        &:last-child {
+          &:after {
+            width  : 0;
+            height : 0;
+          }
+        }
+      }
+    }
+  }
 }
