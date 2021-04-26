@@ -8,7 +8,6 @@ body {
   min-height     : 100vh;
 }
 
-
 .content {
   position         : relative;
   background-color : white;
@@ -20,8 +19,6 @@ body {
     margin-top : 50px;
   }
 }
-
-
 
 .spacer {
   background-color : white;
@@ -37,12 +34,13 @@ body {
 
 .floating-img {
 
-  @include media-breakpoint-up(lg) {
-    float : right;
+  float : right;
+  @include media-breakpoint-down(md) {
+    max-width : 90px;
+    height    : auto;
   }
 
 }
-
 
 .anchor {
   &::before {

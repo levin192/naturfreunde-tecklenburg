@@ -85,7 +85,7 @@ layout: base.njk
           {% markdown %}{{ frontpage.offeringsText }}{% endmarkdown %}
         </div>
       </div>
-      <div class="col-md-6 px-4 d-flex anchor" id="ziele">
+      <div class="col-md-6 px-4 d-flex anchor" id="Ziele">
         <div class="my-auto">
           <h2>Unsere Ziele:</h2>
           {% markdown %}{{ frontpage.goalsList }}{% endmarkdown %}
@@ -103,39 +103,67 @@ layout: base.njk
   <div class="container">
     <section class="row gx-2">
       <div class="col-md-8 offset-md-2">
-        <div class="anchor" id="mitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
+        <div class="anchor" id="MitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
           {% markdown %}{{ frontpage.MitgliedWerdenText }}{% endmarkdown %}
-        </div>
-        <div class="my-5">
-          <div class="anchor" id="vorstand">
-            <h2>Unser Vorstand:</h2>
-            <div class="vorstand row mt-3 gy-4">
-              {% for mitglied in vorstand %}
-                {% if mitglied.Image.formats.thumbnail %}
-                  {% set image = mitglied.Image.formats.thumbnail.url %}
-                {% elseif mitglied.Image.url %}
-                  {% set image = mitglied.Image.url %}
-                {% endif %}
-                <div class="vorstand-item col-xl-6">
-                  <div class="d-flex align-items-center">
-                    <div class="vorstand-picture">
-                      {% if mitglied.Image %}
-                        <img src="{{ image }}" alt="" class="vorstand-image"
-                             loading="lazy" width="88" height="88">
-                      {% else %}
-                        <div class="vorstand-placeholder"><span class="ico-user"></span></div>
-                      {% endif %}
-                    </div>
-                    <div class="vorstand-text">
-                      {{ mitglied.Name }}<br>({{ mitglied.Rolle }})
-                    </div>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          </div>
         </div>
       </div>
     </section>
+    <section class="my-5">
+      <div class="anchor" id="Vorstand">
+        <h2>Unser Vorstand:</h2>
+        <div class="vorstand row mt-3 gy-4">
+          {% for mitglied in vorstand %}
+            {% if mitglied.Image.formats.thumbnail %}
+              {% set image = mitglied.Image.formats.thumbnail.url %}
+            {% elseif mitglied.Image.url %}
+              {% set image = mitglied.Image.url %}
+            {% endif %}
+            <div class="vorstand-item col-xl-6">
+              <div class="d-flex align-items-center">
+                <div class="vorstand-picture">
+                  {% if mitglied.Image %}
+                    <img src="{{ image }}" alt="" class="vorstand-image"
+                         loading="lazy" width="88" height="88">
+                  {% else %}
+                    <div class="vorstand-placeholder"><span class="ico-user"></span></div>
+                  {% endif %}
+                </div>
+                <div class="vorstand-text">
+                  {{ mitglied.Name }}<br>({{ mitglied.Rolle }})
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    {% if partners|length > 0 %}
+    <section class="pt-5 my-5">
+      <div class="anchor" id="KooperationsPartner">
+        <h1 class="mb-4">Unsere Kooperationspartner</h1>
+        <div class="pt-3 gy-md-0 gy-3 row partners justify-content-center">
+          {% for partner in partners %}
+            {# Set Partner Image #}
+            {% if partner.Image.formats.thumbnail %}
+              {% set image = partner.Image.formats.thumbnail.url %}
+            {% elseif partner.Image.url %}
+              {% set image = partner.Image.url %}
+            {% endif %}
+            {# --- #}
+            <div class="col-md-3 text-center position-relative">
+              <div class="partner-image-wrap">
+                <img src="{{ image }}" alt="" class="partner-image">
+              </div>
+              <div class="pt-2"><strong>{{ partner.Name }}</strong></div>
+              <div class="pt-1">
+                <i><a class="stretched-link"
+                      href="{{ partner.Link }}">{{ partner.Link | replace("https://", "") }}</a></i>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
   </div>
 </main>

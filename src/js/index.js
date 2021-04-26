@@ -38,3 +38,12 @@ document.addEventListener('scroll', function () {
     ticking = true;
   }
 });
+
+window.addEventListener('load',  () => {
+  const overlay = document.getElementById('loadingOverlay')
+  setTimeout(()=>{
+    overlay.classList.remove('visible')
+    document.body.style.overflow = 'visible'
+  }, 300);
+
+})
