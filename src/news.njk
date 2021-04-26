@@ -16,13 +16,15 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
 {% endif %}
 
 <main class="pt-5">
+
   <section class="container d-flex flex-column">
     <div class="row">
-      <div class=" {% if gallery.length > 0 %}col-lg-8{% else %}col-12{% endif %}">
+      <div class="d-flex flex-column {% if gallery.length > 0 %}col-lg-8{% else %}col-12{% endif %}">
         <h1 class="mb-lg-5 md-3">{{ news.Title }}</h1>
         <div class="news-text">
           {% markdown %}{{ news.Text }}{% endmarkdown %}
         </div>
+        <div class="mt-auto"><a href="{{ '/aktuelles' | url }}">Zurück zur Übersicht</a></div>
       </div>
 
       {% if gallery.length > 0 %}
