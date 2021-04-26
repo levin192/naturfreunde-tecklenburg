@@ -10,7 +10,7 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
 {% set gallery = news.Gallery %}
 <link rel="stylesheet" href="{{ '/newsDetail.css' | url }}">
 {% if news.TeaserImage.formats.large.url %}
-  <div class="news-cover">
+  <div class="news-cover animate__animated animate__fadeIn">
     <img src="{{ news.TeaserImage.formats.large.url }}" alt="" class="news-cover-image">
   </div>
 {% endif %}
@@ -19,7 +19,7 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
 
   <section class="container d-flex flex-column">
     <div class="row">
-      <div class="d-flex flex-column {% if gallery.length > 0 %}col-lg-8{% else %}col-12{% endif %}">
+      <div class="animate__animated animate__fadeIn d-flex flex-column {% if gallery.length > 0 %}col-lg-8{% else %}col-12{% endif %}">
         <h1 class="mb-lg-5 md-3">{{ news.Title }}</h1>
         <div class="news-text">
           {% markdown %}{{ news.Text }}{% endmarkdown %}
@@ -28,7 +28,7 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
       </div>
 
       {% if gallery.length > 0 %}
-        <div class="col-lg-4">
+        <div class="col-lg-4 animate__animated animate__fadeIn animate__delay-1s">
           <div class="news-gallery-wrapper">
             <div class="news-gallery-slider-controls d-none">
               <div class="btn btn-gallery">
