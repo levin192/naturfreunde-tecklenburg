@@ -16,7 +16,7 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
 {% endif %}
 
 <main class="pt-5">
-  <div class="container d-flex flex-column">
+  <section class="container d-flex flex-column">
     <div class="row">
       <div class=" {% if gallery.length > 0 %}col-lg-8{% else %}col-12{% endif %}">
         <h1 class="mb-lg-5 md-3">{{ news.Title }}</h1>
@@ -24,6 +24,7 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
           {% markdown %}{{ news.Text }}{% endmarkdown %}
         </div>
       </div>
+
       {% if gallery.length > 0 %}
         <div class="col-lg-4">
           <div class="news-gallery-wrapper">
@@ -52,7 +53,7 @@ permalink: 'aktuelles/{{ news.Title | slug }}/'
         </div>
       {% endif %}
     </div>
-  </div>
+  </section>
 </main>
 
 <script src="{{ '/newsDetail.js' | url }}"></script>
