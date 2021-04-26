@@ -5,6 +5,7 @@ const markdownIt = require("markdown-it");
 module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('src/images')
   eleventyConfig.addPassthroughCopy('src/fonts')
+  eleventyConfig.addPassthroughCopy('src/pdf')
   eleventyConfig.addPlugin(ErrorOverlay);
 
   const md = new markdownIt({
