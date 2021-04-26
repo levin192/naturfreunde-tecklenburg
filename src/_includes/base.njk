@@ -35,13 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-md-4 ms-0">
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/#ziele' | url }}">Ziele</a>
+            <a class="nav-link" href="{{ '/#Ziele' | url }}">Ziele</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/#mitgliedWerden' | url }}">Mitglied werden</a>
+            <a class="nav-link" href="{{ '/#MitgliedWerden' | url }}">Mitglied werden</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/#vorstand' | url }}">Vorstand</a>
+            <a class="nav-link" href="{{ '/#Vorstand' | url }}">Vorstand</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ '/#KooperationsPartner' | url }}">Kooperations Partner</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ '/aktuelles' | url }}">Aktuelles</a>
@@ -85,10 +88,9 @@
       <div class="col-md-4">
         <h4 id="links">Links:</h4>
         <ul>
-          <li><i class="ico-tree"></i><a target="_blank" rel="nofollow" href="https://www.outdoorsport-proteuto.de/">www.outdoorsport-proteuto.de</a>
-          </li>
-          <li><i class="ico-tree"></i><a target="_blank" rel="nofollow" href="https://www.naturfreunde.de/">www.naturfreunde.de</a>
-          </li>
+          {% for partner in partners %}
+            <li><i class="ico-tree"></i><a target="_blank" rel="nofollow" href="{{ partner.Link }}">{{ partner.Name }}</a>
+          {% endfor %}
         </ul>
       </div>
       <div class="col-12 text-start">
