@@ -163,7 +163,6 @@
   }
 }
 
-
 .gebirge {
   position   : relative;
   height     : 40vh;
@@ -252,5 +251,17 @@
 
       }
     }
+  }
+}
+
+.partners {
+  .partner-image-wrap {
+    height          : 128px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+  }
+  .partner-image {
+    max-height : 128px;
   }
 }

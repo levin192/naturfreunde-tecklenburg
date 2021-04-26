@@ -6,6 +6,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('src/images')
   eleventyConfig.addPassthroughCopy('src/fonts')
   eleventyConfig.addPassthroughCopy('src/pdf')
+  eleventyConfig.addPassthroughCopy('src/favicon')
   eleventyConfig.addPlugin(ErrorOverlay);
 
   const md = new markdownIt({
