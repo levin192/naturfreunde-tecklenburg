@@ -4,7 +4,7 @@
   object-fit : cover;
 }
 
-.news-overview, .news-single {
+.news-overview, .news-single, .privacy, .imprint {
   .contact-wrap {
     @include media-breakpoint-up(lg) {
       top    : auto;

@@ -45,12 +45,13 @@ layout: base.njk
   <div class="container">
     <section class="row mb-2 mb-md-5">
       <div class="col-md-8 offset-md-2">
-        <img src="images/nfd-bildmarke.png" alt="NFD-Bildmarke" style="" class="img-fluid floating-img">
+        <img src="images/nfd-bildmarke.png" alt="NFD-Bildmarke" loading="lazy" class="img-fluid floating-img">
         {% markdown %}{{ frontpage.Content }}{% endmarkdown %}
       </div>
       <div class="mt-5">
         <figure class="figure">
-          <img src="images/gruppenbild.jpg" alt="" class="figure-img img-fluid">
+          <img src="images/gruppenbild.jpg" alt="Unsere Gründungsmitglieder" class="figure-img img-fluid"
+               loading="lazy">
           <figcaption>Unsere Gründungsmitglieder v.l.n.r: Tom, Janka, Martin, Stefan, Julia, Thomas, Julius</figcaption>
         </figure>
       </div>
@@ -77,7 +78,7 @@ layout: base.njk
     {# --- #}
     <section class="row gx-0 gy-3 gy-md-0 image-text-boxes">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="600" data-aos-offset="400">
-        <img src="{{ offeringsImageUrl }}" alt="" class="box-image">
+        <img src="{{ offeringsImageUrl }}" alt="" class="box-image" loading="lazy">
       </div>
 
       <div class="col-md-6 px-4 d-flex">
@@ -93,7 +94,7 @@ layout: base.njk
         </div>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-duration="600">
-        <img src="{{ goalsImageUrl }}" alt="" class="box-image">
+        <img src="{{ goalsImageUrl }}" alt="" class="box-image" loading="lazy">
       </div>
       <div class="col-md-8 offset-md-2 my-5">
         {% markdown %}{{ frontpage.textAfter }}{% endmarkdown %}
@@ -139,32 +140,32 @@ layout: base.njk
       </div>
     </section>
     {% if partners|length > 0 %}
-    <section class="pt-5 my-5">
-      <div class="anchor" id="KooperationsPartner">
-        <h1 class="mb-4">Unsere Kooperationspartner</h1>
-        <div class="pt-3 gy-md-0 gy-3 row partners justify-content-center">
-          {% for partner in partners %}
-            {# Set Partner Image #}
-            {% if partner.Image.formats.thumbnail %}
-              {% set image = partner.Image.formats.thumbnail.url %}
-            {% elseif partner.Image.url %}
-              {% set image = partner.Image.url %}
-            {% endif %}
-            {# --- #}
-            <div class="col-md-3 text-center position-relative">
-              <div class="partner-image-wrap">
-                <img src="{{ image }}" alt="" class="partner-image">
+      <section class="pt-5 my-5">
+        <div class="anchor" id="KooperationsPartner">
+          <h1 class="mb-4">Unsere Kooperationspartner</h1>
+          <div class="pt-3 gy-md-0 gy-3 row partners justify-content-center">
+            {% for partner in partners %}
+              {# Set Partner Image #}
+              {% if partner.Image.formats.thumbnail %}
+                {% set image = partner.Image.formats.thumbnail.url %}
+              {% elseif partner.Image.url %}
+                {% set image = partner.Image.url %}
+              {% endif %}
+              {# --- #}
+              <div class="col-md-3 text-center position-relative">
+                <div class="partner-image-wrap">
+                  <img src="{{ image }}" alt="" class="partner-image" loading="lazy">
+                </div>
+                <div class="pt-2"><strong>{{ partner.Name }}</strong></div>
+                <div class="pt-1">
+                  <i><a class="stretched-link"
+                        href="{{ partner.Link }}">{{ partner.Link | replace("https://", "") }}</a></i>
+                </div>
               </div>
-              <div class="pt-2"><strong>{{ partner.Name }}</strong></div>
-              <div class="pt-1">
-                <i><a class="stretched-link"
-                      href="{{ partner.Link }}">{{ partner.Link | replace("https://", "") }}</a></i>
-              </div>
-            </div>
-          {% endfor %}
+            {% endfor %}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     {% endif %}
   </div>
 </main>
