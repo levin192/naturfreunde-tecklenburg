@@ -4,6 +4,20 @@
   object-fit : cover;
 }
 
+.news-overview, .news-single {
+  .contact-wrap {
+    @include media-breakpoint-up(lg) {
+      top    : auto;
+      bottom : 30px;
+    }
+    &:not(.docked) {
+      a {
+        color : $onyx;
+      }
+    }
+  }
+}
+
 .contact-wrap {
   z-index          : 999;
   font-size        : .75rem;
