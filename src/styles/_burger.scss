@@ -1,0 +1,7 @@
+.navbar-toggler {
+  transition : transform ease-in-out .6s;
+  transform  : rotate(540deg);
+  &.collapsed {
+    transform : rotate(0);
+  }
+}
