@@ -1,0 +1,27 @@
+<section>
+  <h2>Unser Vorstand:</h2>
+  <div class="vorstand row mt-3 gy-4">
+    {% for mitglied in vorstand %}
+      {% if mitglied.Image.formats.thumbnail %}
+        {% set image = mitglied.Image.formats.thumbnail.url %}
+      {% elseif mitglied.Image.url %}
+        {% set image = mitglied.Image.url %}
+      {% endif %}
+      <div class="vorstand-item col-xl-6">
+        <div class="d-flex align-items-center">
+          <div class="vorstand-picture">
+            {% if mitglied.Image %}
+              <img src="{{ image }}" alt="" class="vorstand-image"
+                   loading="lazy" width="88" height="88">
+            {% else %}
+              <div class="vorstand-placeholder"><span class="ico-user"></span></div>
+            {% endif %}
+          </div>
+          <div class="vorstand-text">
+            {{ mitglied.Name }}<br>({{ mitglied.Rolle }})
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

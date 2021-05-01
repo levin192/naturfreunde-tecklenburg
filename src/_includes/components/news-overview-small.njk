@@ -1,0 +1,37 @@
+<section>
+
+  <div class="w-100 text-center"><h3>Aktuelles</h3></div>
+  <div class="row gy-4 justify-content-center align-items-center">
+
+    {% for news in neuigkeiten|reverse %}
+      {% if loop.index <= 3 %}
+        {% if loop.index == 1 %}
+          {% set delay = 'zoom-in-left' %}
+        {% elseif loop.index == 2 %}
+          {% set delay = 'zoom-in' %}
+        {% elseif loop.index == 3 %}
+          {% set delay = 'zoom-in-right' %}
+        {% endif %}
+
+
+        {% set thumbnail = news.TeaserImage.formats.thumbnail %}
+
+        <div class="col-md-6 col-xl-3" data-aos="{{ delay }}" data-aos-duration="800"
+             data-aos-offset="300">
+          <div class="card news-card h-100">
+            {% if thumbnail %}
+              <img src="{{ thumbnail.url }}" alt="{{ news.TeaserImage.alternativeText }}"
+                   loading="lazy" width="{{ thumbnail.width }}" height="{{ thumbnail.height }}" class="card-img-top">
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">{{ news.Title }}</h5>
+              <a href="/aktuelles/{{ news.Title | slug }}/"
+                 class="btn btn-secondary stretched-link mt-auto d-inline-block">Mehr
+                Lesen</a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

@@ -13,7 +13,7 @@ AOS.init();
 const sn = document.getElementById('stickyNav')
 const navBar = document.querySelector('.navbar')
 
-document.body.style.marginTop = navBar.offsetHeight + 'px'
+
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
@@ -41,9 +41,10 @@ document.addEventListener('scroll', function () {
 
 window.addEventListener('load',  () => {
   const overlay = document.getElementById('loadingOverlay')
+  document.body.style.marginTop = navBar.offsetHeight + 'px'
   setTimeout(()=>{
     overlay.classList.remove('visible')
     document.body.style.overflowY = 'visible'
-  }, 300);
+  }, 300)
 
 })
