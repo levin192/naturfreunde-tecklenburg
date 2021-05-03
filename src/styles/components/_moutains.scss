@@ -1,0 +1,30 @@
+.gebirge {
+  position   : relative;
+  height     : 40vh;
+  margin-top : -15vh;
+  @media (max-width : 1330px) {
+    display : none;
+  }
+  svg {
+    position : absolute;
+    top      : -20vh;
+    path {
+      fill : $teagreen;
+    }
+    &:first-child {
+      path {
+        fill : $grannysmith;
+      }
+    }
+    &:last-child {
+      path {
+        fill : white;
+      }
+    }
+  }
+}
+
+.footer-gebirge {
+  position : absolute;
+  bottom   : 0;
+}

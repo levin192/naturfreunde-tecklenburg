@@ -1,5 +1,5 @@
 import AOS from 'aos';
-import bootstrap from 'bootstrap'
+import 'bootstrap/js/src/collapse'
 
 
 import 'aos/src/sass/aos.scss';
@@ -12,7 +12,6 @@ AOS.init();
 
 const sn = document.getElementById('stickyNav')
 const navBar = document.querySelector('.navbar')
-
 
 
 let lastKnownScrollPosition = 0;
@@ -39,10 +38,10 @@ document.addEventListener('scroll', function () {
   }
 });
 
-window.addEventListener('load',  () => {
+window.addEventListener('load', () => {
   const overlay = document.getElementById('loadingOverlay')
   document.body.style.marginTop = navBar.offsetHeight + 'px'
-  setTimeout(()=>{
+  setTimeout(() => {
     overlay.classList.remove('visible')
     document.body.style.overflowY = 'visible'
   }, 300)
