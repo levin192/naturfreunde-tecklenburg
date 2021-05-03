@@ -33,7 +33,7 @@ pagination:
         {% set thumbnail = news.TeaserImage.formats.thumbnail %}
 
         <div data-sort-date="{{ sortDate }}" class="col-md-6 col-xl-3 animate__animated animate__fadeInUp {{ delay }}">
-          <div class="card news-card h-100 js-tilt " data-tilt data-tilt-max="5" data-tilt-speed="800">
+          <div class="card news-card h-100">
             {% if thumbnail %}
               <img src="{{ thumbnail.url }}" alt="{{ news.TeaserImage.alternativeText }}"
                    loading="lazy" width="{{ thumbnail.width }}" height="{{ thumbnail.height }}" class="card-img-top">
@@ -53,5 +53,4 @@ pagination:
     </div>
   </div>
 </main>
-<script src="{{ '/tilt.js' | url }}"></script>
 <script src="{{ '/news.js' | url }}"></script>
