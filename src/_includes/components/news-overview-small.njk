@@ -33,5 +33,10 @@
         </div>
       {% endif %}
     {% endfor %}
+    {% if neuigkeiten|length > 3 %}
+      <div class="col-12 text-center">
+        <a class="btn btn-outline-secondary px-4" href="{{ '/aktuelles' | url }}">Alle Neuigkeiten ansehen</a>
+      </div>
+    {% endif %}
   </div>
 </section>
