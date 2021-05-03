@@ -12,7 +12,19 @@ AOS.init();
 
 const sn = document.getElementById('stickyNav')
 const navBar = document.querySelector('.navbar')
+const root = document.documentElement;
 
+function calcMountainHeight() {
+  return Math.floor(document.getElementById('mountainsFooter').children[0].height.baseVal.value)
+}
+
+function setMountainPadding() {
+  root.style.setProperty('--mountain-spacer', calcMountainHeight() + 'px')
+}
+
+function setNavOffset() {
+  root.style.setProperty('--nav-offset', navBar.offsetHeight + 'px')
+}
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
@@ -28,7 +40,6 @@ function onScrollChange(scrollPos) {
 
 document.addEventListener('scroll', function () {
   lastKnownScrollPosition = window.scrollY;
-
   if (!ticking) {
     window.requestAnimationFrame(() => {
       onScrollChange(lastKnownScrollPosition);
@@ -38,9 +49,22 @@ document.addEventListener('scroll', function () {
   }
 });
 
+window.addEventListener('resize', function () {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      setMountainPadding()
+      setNavOffset()
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
 window.addEventListener('load', () => {
   const overlay = document.getElementById('loadingOverlay')
-  document.body.style.marginTop = navBar.offsetHeight + 'px'
+  setMountainPadding()
+  setNavOffset()
+  //document.getElementById('mountainSpacer').style.paddingBottom = calcMountainHeight() + 'px'
   setTimeout(() => {
     overlay.classList.remove('visible')
     document.body.style.overflowY = 'visible'
