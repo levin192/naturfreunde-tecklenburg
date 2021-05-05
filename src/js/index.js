@@ -1,13 +1,8 @@
-import AOS from 'aos';
+
 import 'bootstrap/js/src/collapse'
 
-
-import 'aos/src/sass/aos.scss';
 import 'animate.css/animate.css'
 import '../styles/style.scss';
-
-
-AOS.init();
 
 
 const sn = document.getElementById('stickyNav')
@@ -69,5 +64,4 @@ window.addEventListener('load', () => {
     overlay.classList.remove('visible')
     document.body.style.overflowY = 'visible'
   }, 300)
-
 })

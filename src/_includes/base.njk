@@ -6,6 +6,7 @@
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/bundle.css' | url }}">
+  <link rel="stylesheet" href="{{ '/aos.css' | url }}">
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/favicon/apple-touch-icon.png' | url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon/favicon-32x32.png' | url }}">
@@ -127,7 +128,7 @@
         <ul>
           <li><i class="ico-mail"></i><a
                     href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a></li>
-          <li><i class="ico-instagram"></i><a href="https://instagram.com/naturfreunde.tecklenburg" target="_blank">@naturfeunde.tecklenburg</a>
+          <li><i class="ico-instagram"></i><a href="https://instagram.com/naturfreunde.tecklenburg" target="_blank" rel="noopener">@naturfeunde.tecklenburg</a>
           </li>
         </ul>
       </div>
@@ -151,10 +152,10 @@
 <div id="stickyNav" class="contact-wrap docked">
   <div><i class="ico-mail"></i> <a href="mailto:info@naturfreunde-tecklenburg.de">info@naturfreunde-tecklenburg.de</a>
   </div>
-  <div><i class="ico-instagram"></i><a target="_blank" href="https://instagram.com/naturfreunde.tecklenburg">@naturfreunde.tecklenburg</a>
+  <div><i class="ico-instagram"></i><a target="_blank" rel="nofollow" href="https://instagram.com/naturfreunde.tecklenburg">@naturfreunde.tecklenburg</a>
   </div>
 </div>
-
+<script defer src="{{ '/aos.js' | url }}"></script>
 <script defer src="{{ '/bundle.js' | url }}"></script>
 </body>
 </html>
