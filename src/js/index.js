@@ -8,7 +8,7 @@ const docBody = document.body
 const collapsingNav = document.getElementById('navbarSupportedContent')
 
 function calcMountainHeight() {
-  return Math.floor(document.getElementById('mountainsFooter').children[0].height.baseVal.value)
+  return Math.floor(document.getElementById('mountainsFooter').children[0].clientHeight)
 }
 
 function setMountainPadding() {
