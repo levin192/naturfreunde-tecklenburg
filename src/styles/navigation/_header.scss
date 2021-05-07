@@ -7,7 +7,7 @@
   }
   &-nav {
     letter-spacing : 0.05em;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xl) {
       .nav-item {
         position : relative;
         &:after {
