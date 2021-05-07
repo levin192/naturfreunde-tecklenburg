@@ -1,9 +1,8 @@
 .navbar-toggler {
   transition : transform ease-in-out .6s;
-  transform: scale(1.1);
+  transform  : scale(1.1);
   .circle {
-    cursor    : pointer;
-    transform : translateY(-1px);
+    cursor : pointer;
     .background {
       stroke : transparent;
     }
@@ -22,16 +21,19 @@
     }
 
     .line2 {
-      transform : rotate(-135deg);
+      opacity           : 0;
+      transform         : rotate(0);
+      stroke-dasharray  : 0;
+      stroke-dashoffset : 2;
     }
 
     .line3 {
-      opacity : 0;
+      transform : rotate(-135deg);
     }
 
   }
   &.collapsed {
-    transform : scale(1.001);
+    transform : scale(1);
     .circle {
       .foreground {
         fill              : transparent;
@@ -48,13 +50,15 @@
       }
 
       .line1 {
-        transform : rotate(0);
-      }
-      .line2 {
         transform : translateY(-5px) rotate(0);
       }
+      .line2 {
+        opacity           : 1;
+        stroke-dasharray  : 17;
+        stroke-dashoffset : 34;
+
+      }
       .line3 {
-        opacity   : 1;
         transform : translateY(5px) rotate(0);
       }
     }
