@@ -1,5 +1,5 @@
 <section>
-  <h2>Unser Vorstand:</h2>
+  <h2 data-aos="fade-in" data-aos-duration="600" data-aos-offset="400">Unser Vorstand:</h2>
   <div class="vorstand row mt-3 gy-4">
     {% for mitglied in vorstand %}
       {% if mitglied.Image.formats.thumbnail %}
@@ -7,7 +7,7 @@
       {% elseif mitglied.Image.url %}
         {% set image = mitglied.Image.url %}
       {% endif %}
-      <div class="vorstand-item col-xl-6">
+      <div class="vorstand-item col-xl-6" data-aos="fade-left" data-aos-duration="600" data-aos-offset="400">
         <div class="d-flex align-items-center">
           <div class="vorstand-picture">
             {% if mitglied.Image %}

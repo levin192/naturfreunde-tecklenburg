@@ -28,11 +28,11 @@ layout: base.njk
   <div class="container">
     <section class="row mb-2 mb-md-5">
       <div class="col-md-8 offset-md-2">
-        <img src="images/nfd-bildmarke.png" alt="NFD-Bildmarke" loading="lazy" class="img-fluid floating-img">
-        {% markdown %}{{ frontpage.Content }}{% endmarkdown %}
+        <img src="images/nfd-bildmarke.png" alt="NFD-Bildmarke" loading="lazy" class="img-fluid floating-img figure animate__animated animate__fadeIn animate__delay-1s">
+        <div class="animate__animated animate__fadeIn">{% markdown %}{{ frontpage.Content }}{% endmarkdown %}</div>
       </div>
       <div class="mt-5">
-        <figure class="figure">
+        <figure class="figure animate__animated animate__fadeIn animate__delay-2s">
           <img src="images/gruppenbild.jpg" alt="Unsere Gründungsmitglieder" class="figure-img img-fluid"
                loading="lazy">
           <figcaption>Unsere Gründungsmitglieder v.l.n.r: Tom, Janka, Martin, Stefan, Julia, Thomas, Julius</figcaption>
@@ -63,13 +63,13 @@ layout: base.njk
         <img src="{{ offeringsImageUrl }}" alt="" class="box-image" loading="lazy">
       </div>
 
-      <div class="col-md-6 px-4 d-flex">
+      <div class="col-md-6 px-4 d-flex" data-aos="fade-left" data-aos-duration="600" data-aos-offset="400">
         <div class="my-auto">
           <h2>Wir bieten euch</h2>
           {% markdown %}{{ frontpage.offeringsText }}{% endmarkdown %}
         </div>
       </div>
-      <div class="col-md-6 px-4 d-flex anchor" id="Ziele">
+      <div class="col-md-6 px-4 d-flex anchor" id="Ziele" data-aos="fade-right" data-aos-duration="600" data-aos-offset="400">
         <div class="my-auto">
           <h2>Unsere Ziele:</h2>
           {% markdown %}{{ frontpage.goalsList }}{% endmarkdown %}
@@ -78,7 +78,7 @@ layout: base.njk
       <div class="col-md-6" data-aos="fade-left" data-aos-duration="600">
         <img src="{{ goalsImageUrl }}" alt="" class="box-image" loading="lazy">
       </div>
-      <div class="col-md-8 offset-md-2 my-5">
+      <div class="col-md-8 offset-md-2 my-5" data-aos="fade-up" data-aos-duration="600" data-aos-offset="400">
         {% markdown %}{{ frontpage.textAfter }}{% endmarkdown %}
       </div>
     </section>
@@ -87,7 +87,8 @@ layout: base.njk
   <div class="container">
     <section class="row gx-2">
       <div class="col-md-8 offset-md-2">
-        <div class="anchor" id="MitgliedWerden"><h2>Wie werde ich Mitglied?</h2>
+        <div class="anchor" id="MitgliedWerden" data-aos="fade-up" data-aos-duration="600" data-aos-offset="400">
+          <h2>Wie werde ich Mitglied?</h2>
           {% markdown %}{{ frontpage.MitgliedWerdenText }}{% endmarkdown %}
         </div>
       </div>

@@ -1,5 +1,5 @@
 <section>
-  <h1 class="mb-4">Unsere Kooperationspartner</h1>
+  <h1 class="mb-4" data-aos="fade-in" data-aos-duration="600" data-aos-offset="400">Unsere Kooperationspartner</h1>
   <div class="pt-3 gy-md-0 gy-3 row partners justify-content-center">
     {% for partner in partners %}
       {# Set Partner Image #}
@@ -9,7 +9,7 @@
         {% set image = partner.Image.url %}
       {% endif %}
       {# --- #}
-      <div class="col-md-3 text-center position-relative">
+      <div class="col-md-3 text-center position-relative" data-aos="fade-up" data-aos-duration="600" data-aos-offset="400">
         <div class="partner-image-wrap">
           <img src="{{ image }}" alt="" class="partner-image" loading="lazy">
         </div>
