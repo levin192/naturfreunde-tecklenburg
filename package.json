@@ -38,7 +38,7 @@
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.0-beta2",
+    "bootstrap": "^5.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
     "html-minifier": "^4.0.0",
     "simplelightbox": "^2.7.2",
