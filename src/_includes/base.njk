@@ -64,6 +64,7 @@
 <div id="loadingOverlay" class="visible">
   <div class="spinner"></div>
 </div>
+
 <header>
   <nav class="navbar py-0 fixed-top navbar-dark bg-dark navbar-expand-xl">
     <div class="container-fluid container-xxl">
@@ -75,7 +76,15 @@
       <button class="navbar-toggler border-0 py-0 collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon ico-burger"></span>
+        <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <ellipse class="background" ry="22" rx="22" cy="24.5" cx="24.5" stroke-width="2"/>
+            <ellipse class="foreground" ry="22" rx="22" cy="24.5" cx="24.5" stroke-width="2"/>
+            <line class="line line1" x1="16" y1="24" x2="32" y2="24" />
+            <line class="line line2" x1="16" y1="24" x2="32" y2="24" />
+            <line class="line line3" x1="16" y1="24" x2="32" y2="24" />
+          </g>
+        </svg>
       </button>
       <div class="collapse navbar-collapse collapsed" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-md-4 ms-0">
@@ -95,7 +104,6 @@
             <a class="nav-link" href="{{ '/aktuelles' | url }}">Aktuelles</a>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>

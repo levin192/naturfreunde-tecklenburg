@@ -1,7 +1,90 @@
 .navbar-toggler {
   transition : transform ease-in-out .6s;
-  transform  : rotate(540deg);
+  transform: scale(1.1);
+  .circle {
+    cursor    : pointer;
+    transform : translateY(-1px);
+    .background {
+      stroke : transparent;
+    }
+    .foreground {
+      stroke            : white;
+      fill              : transparent;
+      stroke-dashoffset : 0;
+      transform         : rotate(-90deg);
+    }
+    .line {
+      stroke : white;
+    }
+
+    .line1 {
+      transform : rotate(135deg);
+    }
+
+    .line2 {
+      transform : rotate(-135deg);
+    }
+
+    .line3 {
+      opacity : 0;
+    }
+
+  }
   &.collapsed {
-    transform : rotate(0);
+    transform : scale(1.001);
+    .circle {
+      .foreground {
+        fill              : transparent;
+        stroke-dasharray  : 377;
+        stroke-dashoffset : 377;
+        transform         : rotate(-270deg);
+        transition        : all 800ms ease;
+      }
+      .line {
+        stroke-width     : 2;
+        stroke           : white;
+        transform-origin : 50% 50%;
+        transition       : all 500ms ease;
+      }
+
+      .line1 {
+        transform : rotate(0);
+      }
+      .line2 {
+        transform : translateY(-5px) rotate(0);
+      }
+      .line3 {
+        opacity   : 1;
+        transform : translateY(5px) rotate(0);
+      }
+    }
+  }
+}
+
+.circle {
+  margin : 6px 0;
+  height : 48px;
+  width  : 48px;
+  .foreground {
+    transform-origin : 50% 50%;
+    transition       : all 800ms ease;
+  }
+  .background {
+    fill       : transparent;
+    stroke     : transparent;
+    transition : all 200ms ease;
+  }
+  .line {
+    stroke-width     : 2;
+    stroke           : white;
+    transform-origin : 50% 50%;
+    transition       : all 500ms ease;
+  }
+
+  .line2 {
+    transform : translateY(-5px);
+  }
+  .line3 {
+    transform : translateY(5px);
   }
 }
