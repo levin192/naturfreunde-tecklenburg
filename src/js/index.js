@@ -1,9 +1,4 @@
-
 import 'bootstrap/js/src/collapse'
-
-import 'animate.css/animate.css'
-import '../styles/style.scss';
-
 
 const sn = document.getElementById('stickyNav')
 const navBar = document.querySelector('.navbar')

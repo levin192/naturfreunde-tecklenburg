@@ -9,6 +9,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 module.exports = {
   entry: {
     bundle: './src/js/index.js',
+    styles: './src/js/styles.js',
     aos: './src/js/aos.js',
     news: './src/js/news.js',
     newsDetail: './src/js/news-detail.js'
