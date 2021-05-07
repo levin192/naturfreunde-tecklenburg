@@ -1,8 +1,11 @@
-import 'bootstrap/js/src/collapse'
+import {Collapse} from 'bootstrap';
+
 
 const sn = document.getElementById('stickyNav')
 const navBar = document.querySelector('.navbar')
 const root = document.documentElement
+const docBody = document.body
+const collapsingNav = document.getElementById('navbarSupportedContent')
 
 function calcMountainHeight() {
   return Math.floor(document.getElementById('mountainsFooter').children[0].height.baseVal.value)
@@ -28,7 +31,7 @@ function getScreenSizeString() {
 }
 
 function setResponsiveDataSet() {
-  document.body.dataset.screenSize = getScreenSizeString()
+  docBody.dataset.screenSize = getScreenSizeString()
 }
 
 function setNavOffset() {
@@ -40,8 +43,19 @@ function addOpenClass() {
 }
 
 function stickyNavListener(el) {
-    el.addEventListener('click', addOpenClass)
+  el.addEventListener('click', addOpenClass)
 }
+
+function collapseNav() {
+  collapsingNav.addEventListener('shown.bs.collapse', () => {
+    docBody.classList.add('nav-visible')
+  })
+  collapsingNav.addEventListener('hidden.bs.collapse', () => {
+    docBody.classList.remove('nav-visible')
+  })
+
+}
+
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
@@ -52,6 +66,14 @@ function onScrollChange(scrollPos) {
     sn.classList.remove('open')
   } else {
     sn.classList.add('docked')
+  }
+  if (scrollPos > 400) {
+    if (docBody.classList.contains('nav-visible')){
+      docBody.classList.remove('nav-visible')
+      new Collapse(collapsingNav, {
+        hide: true
+      })
+    }
   }
 }
 
@@ -83,8 +105,9 @@ window.addEventListener('load', () => {
   setNavOffset()
   setResponsiveDataSet()
   stickyNavListener(sn)
+  collapseNav()
   setTimeout(() => {
     overlay.classList.remove('visible')
-    document.body.style.overflowY = 'visible'
+    docBody.style.overflowY = 'visible'
   }, 300)
 })
