@@ -2,10 +2,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
-
-
-
-
 module.exports = {
   entry: {
     bundle: './src/js/index.js',
@@ -19,7 +15,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
   ],
   mode: 'production',
   devServer: {
@@ -30,21 +28,14 @@ module.exports = {
       {
         test: /\.(sass|css|scss)$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: 'css',
-            }
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              url: false,
-              sourceMap: true
-            }
-          },
+          MiniCssExtractPlugin.loader,
+          'css-loader',
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -54,5 +45,4 @@ module.exports = {
       new CssMinimizerPlugin(),
     ],
   },
-  //watch: true
 };
