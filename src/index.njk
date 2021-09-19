@@ -58,9 +58,10 @@ layout: base.njk
     {% endif %}
 
     {# --- #}
+
     <section class="row gx-0 gy-3 gy-md-0 image-text-boxes">
       <div class="col-md-6" data-aos="fade-right" data-aos-duration="600" data-aos-offset="400">
-        <img src="{{ offeringsImageUrl }}" alt="" class="box-image" loading="lazy">
+        <img src="{{ offeringsImageUrl }}" alt="{{ offeringsImage.alternativeText }}" class="box-image" loading="lazy">
       </div>
 
       <div class="col-md-6 px-4 d-flex" data-aos="fade-left" data-aos-duration="600" data-aos-offset="400">
@@ -76,7 +77,7 @@ layout: base.njk
         </div>
       </div>
       <div class="col-md-6" data-aos="fade-left" data-aos-duration="600">
-        <img src="{{ goalsImageUrl }}" alt="" class="box-image" loading="lazy">
+        <img src="{{ goalsImageUrl }}" alt="{{ goalsImage.alternativeText }}" class="box-image" loading="lazy">
       </div>
       <div class="col-md-8 offset-md-2 my-5" data-aos="fade-up" data-aos-duration="600" data-aos-offset="400">
         {% markdown %}{{ frontpage.textAfter }}{% endmarkdown %}

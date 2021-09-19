@@ -25,7 +25,7 @@
             {% endif %}
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">{{ news.Title }}</h5>
-              <a href="/aktuelles/{{ news.Title | slug }}/"
+              <a href="/aktuelles/{{ news.Title | slug | replace("\"", "") }}/"
                  class="btn btn-secondary stretched-link mt-auto d-inline-block">Mehr
                 Lesen</a>
             </div>

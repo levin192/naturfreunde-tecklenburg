@@ -6,7 +6,7 @@ pagination:
   data: neuigkeiten
   size: 1
   alias: news
-permalink: 'aktuelles/{{ news.Title | slug }}/'
+permalink: 'aktuelles/{{ news.Title | slug | replace("\"", "") }}/'
 ---
 {% set gallery = news.Gallery %}
 <link rel="stylesheet" href="{{ '/newsDetail.css' | url }}">
