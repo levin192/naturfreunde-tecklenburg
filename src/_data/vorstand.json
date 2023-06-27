@@ -1,0 +1,161 @@
+[
+  {
+    "Name": "Julius Schmidt",
+    "Rolle": "2. Vorstand",
+    "published_at": "2021-04-14T08:54:38.535Z",
+    "Image": {
+      "name": "Bild1.png",
+      "alternativeText": "Julius",
+      "caption": "",
+      "width": 615,
+      "height": 555,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619113052/Bild1_1903e26dc6.png",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Bild1.png",
+          "width": 173,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619113053/thumbnail_Bild1_1903e26dc6.png"
+        },
+        "small": {
+          "name": "small_Bild1.png",
+          "width": 500,
+          "height": 451,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619113054/small_Bild1_1903e26dc6.png"
+        }
+      },
+      "id": "6081b45fda74820015d25976"
+    },
+    "id": "6076adc6f08e114e6c42472e"
+  },
+  {
+    "Name": "Janka Bockholt",
+    "Rolle": "Schriftführerin",
+    "published_at": "2021-04-14T08:55:37.230Z",
+    "Image": {
+      "name": "Janka.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 726,
+      "height": 967,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619112951/Janka_3c0e236d5b.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Janka.jpg",
+          "width": 117,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619112952/thumbnail_Janka_3c0e236d5b.jpg"
+        },
+        "medium": {
+          "name": "medium_Janka.jpg",
+          "width": 563,
+          "height": 750,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619112953/medium_Janka_3c0e236d5b.jpg"
+        },
+        "small": {
+          "name": "small_Janka.jpg",
+          "width": 375,
+          "height": 500,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619112954/small_Janka_3c0e236d5b.jpg"
+        }
+      },
+      "id": "6081b3fada74820015d25973"
+    },
+    "id": "6076ae06f08e114e6c42472f"
+  },
+  {
+    "Name": "Thomas Sprekelmeyer Heukamp",
+    "Rolle": "1. Vorstand",
+    "published_at": "2021-04-14T08:54:12.675Z",
+    "Image": {
+      "name": "IMG_2645[1].JPG",
+      "alternativeText": "",
+      "caption": "",
+      "width": 3023,
+      "height": 4032,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120474/IMG_2645_1_7da57dcd6b.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_IMG_2645[1].JPG",
+          "width": 117,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120474/thumbnail_IMG_2645_1_7da57dcd6b.jpg"
+        },
+        "large": {
+          "name": "large_IMG_2645[1].JPG",
+          "width": 750,
+          "height": 1000,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120476/large_IMG_2645_1_7da57dcd6b.jpg"
+        },
+        "medium": {
+          "name": "medium_IMG_2645[1].JPG",
+          "width": 562,
+          "height": 750,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120477/medium_IMG_2645_1_7da57dcd6b.jpg"
+        },
+        "small": {
+          "name": "small_IMG_2645[1].JPG",
+          "width": 375,
+          "height": 500,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120478/small_IMG_2645_1_7da57dcd6b.jpg"
+        }
+      },
+      "id": "6081b3fdda74820015d25975"
+    },
+    "id": "6076ad9ff08e114e6c42472d"
+  },
+  {
+    "Name": "Julia Heukamp",
+    "Rolle": "Kassenwart",
+    "published_at": "2021-04-14T08:55:55.196Z",
+    "Image": {
+      "name": "IMG_0812[1].JPG",
+      "alternativeText": "",
+      "caption": "",
+      "width": 3023,
+      "height": 4032,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120421/IMG_0812_1_5cee617ff0.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_IMG_0812[1].JPG",
+          "width": 117,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120422/thumbnail_IMG_0812_1_5cee617ff0.jpg"
+        },
+        "large": {
+          "name": "large_IMG_0812[1].JPG",
+          "width": 750,
+          "height": 1000,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120423/large_IMG_0812_1_5cee617ff0.jpg"
+        },
+        "medium": {
+          "name": "medium_IMG_0812[1].JPG",
+          "width": 562,
+          "height": 750,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120424/medium_IMG_0812_1_5cee617ff0.jpg"
+        },
+        "small": {
+          "name": "small_IMG_0812[1].JPG",
+          "width": 375,
+          "height": 500,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619120425/small_IMG_0812_1_5cee617ff0.jpg"
+        }
+      },
+      "id": "6081d1290c57785640b28bdf"
+    },
+    "id": "6076ae19f08e114e6c424730"
+  }
+]

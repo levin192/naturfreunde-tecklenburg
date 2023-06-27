@@ -1,0 +1,848 @@
+[
+  {
+    "Gallery": [
+      {
+        "name": "Unterschirften Petition.jpeg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1080,
+        "height": 1467,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545334/Unterschirften_Petition_ea87c4d1f4.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_Unterschirften Petition.jpeg",
+            "width": 115,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545335/thumbnail_Unterschirften_Petition_ea87c4d1f4.jpg"
+          },
+          "large": {
+            "name": "large_Unterschirften Petition.jpeg",
+            "width": 736,
+            "height": 1000,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545336/large_Unterschirften_Petition_ea87c4d1f4.jpg"
+          },
+          "medium": {
+            "name": "medium_Unterschirften Petition.jpeg",
+            "width": 552,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545337/medium_Unterschirften_Petition_ea87c4d1f4.jpg"
+          },
+          "small": {
+            "name": "small_Unterschirften Petition.jpeg",
+            "width": 368,
+            "height": 500,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545337/small_Unterschirften_Petition_ea87c4d1f4.jpg"
+          }
+        },
+        "id": "60978f3ac560190015ae67d6"
+      }
+    ],
+    "Title": "Unterschriftenkampagne von Jugendlichen",
+    "TeaserText": "Drei Jugendliche aus Georgsmarienhütte fordern eine offizielle MTB Strecke",
+    "Text": "Drei Jugendliche aus Georgsmarienhütte engagieren sich für eine offizielle Mountainbike-Strecke in ihrer Stadt. Dazu haben sie mit Hilfe des Vorstandmitglieds der Grünen Georgsmarienhütte, Tobias Demircioglu, eine Unterschriftenkampagne initiiert. Auch die NaturFreunde Tecklenburg sind von der Notwendigkeit eines offiziellen Streckennetzes, das sich an den lokalen Bedürfnissen orientiert, überzeugt. Daher teilen und unterstützen wir die Kampagne gerne.\n\nDazu habt ihr mehrere Möglichkeiten\n1. Ladet die [PDF Datei](https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545700/Unterschriftenliste_Mountainbikestrecke_bb2bf540c3.pdf) herunter, druckt diese aus und schickt die ausgefüllte Liste dann an die in der Fußnote genannte (E-Mail) Adresse. \n2. [Petition Jugendliche fordern legale MTB Strecke](https://www.openpetition.de/petition/online/jugendliche-fordern-legale-mtb-strecke)\n\nWir hoffen auf eine rege Teilnahme und drücken den vier Mitstreitern die Daumen!\n\n\n\n",
+    "published_at": "2022-12-16T09:58:12.386Z",
+    "TeaserImage": {
+      "name": "Unterschirften Petition.jpeg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1080,
+      "height": 1467,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545334/Unterschirften_Petition_ea87c4d1f4.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Unterschirften Petition.jpeg",
+          "width": 115,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545335/thumbnail_Unterschirften_Petition_ea87c4d1f4.jpg"
+        },
+        "large": {
+          "name": "large_Unterschirften Petition.jpeg",
+          "width": 736,
+          "height": 1000,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545336/large_Unterschirften_Petition_ea87c4d1f4.jpg"
+        },
+        "medium": {
+          "name": "medium_Unterschirften Petition.jpeg",
+          "width": 552,
+          "height": 750,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545337/medium_Unterschirften_Petition_ea87c4d1f4.jpg"
+        },
+        "small": {
+          "name": "small_Unterschirften Petition.jpeg",
+          "width": 368,
+          "height": 500,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620545337/small_Unterschirften_Petition_ea87c4d1f4.jpg"
+        }
+      },
+      "id": "60978f3ac560190015ae67d6"
+    },
+    "id": "60978f4dc560190015ae67d7"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "Foto Bardenburg.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1428,
+        "height": 692,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423832/Foto_Bardenburg_69729abeed.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_Foto Bardenburg.jpg",
+            "width": 245,
+            "height": 119,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423833/thumbnail_Foto_Bardenburg_69729abeed.jpg"
+          },
+          "large": {
+            "name": "large_Foto Bardenburg.jpg",
+            "width": 1000,
+            "height": 485,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423834/large_Foto_Bardenburg_69729abeed.jpg"
+          },
+          "medium": {
+            "name": "medium_Foto Bardenburg.jpg",
+            "width": 750,
+            "height": 363,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423835/medium_Foto_Bardenburg_69729abeed.jpg"
+          },
+          "small": {
+            "name": "small_Foto Bardenburg.jpg",
+            "width": 500,
+            "height": 242,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423836/small_Foto_Bardenburg_69729abeed.jpg"
+          }
+        },
+        "id": "61b79f5d4d9ce30015e6a352"
+      },
+      {
+        "name": "Karte.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 953,
+        "height": 655,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423832/Karte_77ffbc036b.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_Karte.jpg",
+            "width": 227,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423833/thumbnail_Karte_77ffbc036b.jpg"
+          },
+          "medium": {
+            "name": "medium_Karte.jpg",
+            "width": 750,
+            "height": 515,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423834/medium_Karte_77ffbc036b.jpg"
+          },
+          "small": {
+            "name": "small_Karte.jpg",
+            "width": 500,
+            "height": 344,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423834/small_Karte_77ffbc036b.jpg"
+          }
+        },
+        "id": "61b79f5b4d9ce30015e6a351"
+      }
+    ],
+    "Title": "Trail führt durch historische Burganlage",
+    "TeaserText": "DIMB IG Osnabrücker Land bittet um Mithilfe",
+    "Text": "Liebe MTB-Freunde,\n\nuns hat eine sehr freundliche Bitte der Archäologen aus Osnabrück erreicht. Wer sich jetzt fragt, warum sich Archäologen an die DIMB IG Osnabrücker Land wenden, darf gespannt sein. Wir haben bei dem Gespräch vieles gelernt und zugegebener Maßen war uns die Bardenburg als Kulturdenkmal so nicht im Kopf. Natürlich kennt man aus seiner Schulzeit viele Infotafeln im Teutoburger Wald, alte Keltenruinen, die Wittekindsburg, das Karlskreuz, Großsteingräber und auch die Varus-Schlacht kennt man. Aber dass es am Dörenberg, genauer gesagt dem Reremberg, eine fast 1000 Jahre alte Burg gibt, ist für viele sicher neu.\n\nEs handelt sich bei der Bardenburg um eine frühmittelalterliche Wallburg, oberhalb gelegen vom Forsthaus Oesede ([https://de.wikipedia.org/wiki/Bardenburg](link)). In letzter Zeit hat der Zustand der Wallburg leider etwas gelitten. Zum einen wurden etliche Bäume aufgrund des Borkenkäfers entfernt und zum anderen verläuft seit langem ein Trail, der sogn. Salamander oder Hobbit, mitten durch die Burganlage. Der Trailabschnitt um den es hier geht, ist auf dem Bild rot eingezeichnet.\n\nWir möchten euch als rücksichtsvolle Mountainbiker und im Kontext der aktuell laufenden Bemühungen für ein legales Trailnetz bitten, diesen Trailabschnitt zu meiden. Bleibt doch alternativ auf dem Ahornweg, bzw. dem weiter verlaufenden Terra Trail. Bitte gebt diese Info auch an euere Freunde weiter.\n\nBeste Grüße\n\nDIMB IG Osnabrücker Land\n\nHier der Link zur [Originalbeitrag auf Facebook](https://www.facebook.com/2001262543466500/posts/3092083091051101/).\n",
+    "published_at": "2021-12-13T19:34:08.543Z",
+    "TeaserImage": {
+      "name": "Karte.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 953,
+      "height": 655,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423832/Karte_77ffbc036b.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Karte.jpg",
+          "width": 227,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423833/thumbnail_Karte_77ffbc036b.jpg"
+        },
+        "medium": {
+          "name": "medium_Karte.jpg",
+          "width": 750,
+          "height": 515,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423834/medium_Karte_77ffbc036b.jpg"
+        },
+        "small": {
+          "name": "small_Karte.jpg",
+          "width": 500,
+          "height": 344,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1639423834/small_Karte_77ffbc036b.jpg"
+        }
+      },
+      "id": "61b79f5b4d9ce30015e6a351"
+    },
+    "id": "61b7a02d4d9ce30015e6a356"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "180906_DIMB_Schild_lay03.png",
+        "alternativeText": "DIMB Natur erleben",
+        "caption": "",
+        "width": 1050,
+        "height": 1696,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619539840/180906_DIMB_Schild_lay03_1294386ad1.png",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_180906_DIMB_Schild_lay03.png",
+            "width": 97,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619539841/thumbnail_180906_DIMB_Schild_lay03_1294386ad1.png"
+          },
+          "large": {
+            "name": "large_180906_DIMB_Schild_lay03.png",
+            "width": 619,
+            "height": 1000,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619539842/large_180906_DIMB_Schild_lay03_1294386ad1.png"
+          },
+          "medium": {
+            "name": "medium_180906_DIMB_Schild_lay03.png",
+            "width": 464,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619539843/medium_180906_DIMB_Schild_lay03_1294386ad1.png"
+          },
+          "small": {
+            "name": "small_180906_DIMB_Schild_lay03.png",
+            "width": 310,
+            "height": 500,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619539845/small_180906_DIMB_Schild_lay03_1294386ad1.png"
+          }
+        },
+        "id": "608837852c280c001534484f"
+      }
+    ],
+    "Title": "Mitgliedschaft beim DIMB",
+    "TeaserText": "Ab sofort sind die Naturfreunde Tecklenburg e.V. als Verein Mitglied der DIMB",
+    "published_at": "2021-04-27T16:07:55.762Z",
+    "TeaserImage": {
+      "name": "DIMB_Logo_Tagline_CMYK.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 451,
+      "height": 164,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619540135/DIMB_Logo_Tagline_CMYK_ddf177f138.png",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_DIMB_Logo_Tagline_CMYK.png",
+          "width": 245,
+          "height": 89,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619540136/thumbnail_DIMB_Logo_Tagline_CMYK_ddf177f138.png"
+        }
+      },
+      "id": "608838a82c280c0015344852"
+    },
+    "Text": "Die DIMB wurde 1991 mit dem Ziel gegründet, sich für den naturverträglichen und umweltbewussten MTB Sport einzusetzen. Über das bereite Angebot an Fort- und Ausbildungen, z.B. zum Fahrtechniktrainer, haben wir einen starken Partner an Board. Das hilft uns, euch attraktive Angebote im Vereinsleben zu ermöglichen! ",
+    "id": "608836382c280c001534484a"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "BewaTrek.jpg",
+        "alternativeText": "BewaTrek",
+        "caption": "",
+        "width": 283,
+        "height": 360,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619185422/Bewa_Trek_d0f53aac96.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_BewaTrek.jpg",
+            "width": 123,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619185423/thumbnail_Bewa_Trek_d0f53aac96.jpg"
+          }
+        },
+        "id": "6082cf0fca75fa00155da912"
+      }
+    ],
+    "Title": "Zusammenarbeit mit Bewatrek Osnabrück",
+    "TeaserText": "Wir haben Neuigkeiten für Euch! Unsere erste Unternehmenskooperation ist geschafft!",
+    "Text": "Wir freuen uns, euch darüber zu informieren, dass ihr als Mitglied der NaturFreunde Tecklenburg e.V. ab sofort **[10% Rabatt bei Bewatrek Osnabrück](https://www.bewatrek.de/)** erhaltet. Dafür müsst ihr lediglich euren **Mitgliedsausweis** vorweisen.\n\nBei der großen Auswahl, wird für euch als Outdoorsportler der ein oder andere interessante Ausrüstungsgegenstand dabei sein.\n\nVielen Dank an **Bewatrek Osnabrück!** Wir freuen uns über die Kooperation!",
+    "published_at": "2021-04-23T13:50:07.621Z",
+    "TeaserImage": {
+      "name": "BewaTrek.jpg",
+      "alternativeText": "BewaTrek",
+      "caption": "",
+      "width": 279,
+      "height": 162,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619185968/Bewa_Trek_709542454f.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_BewaTrek.jpg",
+          "width": 245,
+          "height": 142,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619185968/thumbnail_Bewa_Trek_709542454f.jpg"
+        }
+      },
+      "id": "6082d131ca75fa00155da916"
+    },
+    "id": "6082d08dca75fa00155da913"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "NATURFREUNDE TECKLENBURG 2023 (1).png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1700,
+        "height": 1080,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183442/NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_NATURFREUNDE TECKLENBURG 2023 (1).png",
+            "width": 245,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183443/thumbnail_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+          },
+          "large": {
+            "name": "large_NATURFREUNDE TECKLENBURG 2023 (1).png",
+            "width": 1000,
+            "height": 635,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183445/large_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+          },
+          "medium": {
+            "name": "medium_NATURFREUNDE TECKLENBURG 2023 (1).png",
+            "width": 750,
+            "height": 476,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183446/medium_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+          },
+          "small": {
+            "name": "small_NATURFREUNDE TECKLENBURG 2023 (1).png",
+            "width": 500,
+            "height": 318,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183446/small_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+          }
+        },
+        "id": "639c3c57b6585400159d0284"
+      }
+    ],
+    "Title": "TERMINE 2023",
+    "TeaserText": "Nähere Infos zu den einzelnen Terminen gibt es rechtzeitig per Mail ",
+    "Text": "Hier findest du alle bisher geplanten Termine für das Jahr 2023. \nBei Fragen wende dich gern per WhatsApp oder E-Mail an uns!",
+    "published_at": "2022-12-16T09:37:41.313Z",
+    "TeaserImage": {
+      "name": "NATURFREUNDE TECKLENBURG 2023 (1).png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1700,
+      "height": 1080,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183442/NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_NATURFREUNDE TECKLENBURG 2023 (1).png",
+          "width": 245,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183443/thumbnail_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+        },
+        "large": {
+          "name": "large_NATURFREUNDE TECKLENBURG 2023 (1).png",
+          "width": 1000,
+          "height": 635,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183445/large_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+        },
+        "medium": {
+          "name": "medium_NATURFREUNDE TECKLENBURG 2023 (1).png",
+          "width": 750,
+          "height": 476,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183446/medium_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+        },
+        "small": {
+          "name": "small_NATURFREUNDE TECKLENBURG 2023 (1).png",
+          "width": 500,
+          "height": 318,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1671183446/small_NATURFREUNDE_TECKLENBURG_2023_1_d0b5c553d3.png"
+        }
+      },
+      "id": "639c3c57b6585400159d0284"
+    },
+    "id": "639c3c60b6585400159d0285"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "photo_2021-04-24_13-46-59.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1280,
+        "height": 960,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264854/photo_2021_04_24_13_46_59_a4bf978101.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_photo_2021-04-24_13-46-59.jpg",
+            "width": 208,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264854/thumbnail_photo_2021_04_24_13_46_59_a4bf978101.jpg"
+          },
+          "large": {
+            "name": "large_photo_2021-04-24_13-46-59.jpg",
+            "width": 1000,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264855/large_photo_2021_04_24_13_46_59_a4bf978101.jpg"
+          },
+          "medium": {
+            "name": "medium_photo_2021-04-24_13-46-59.jpg",
+            "width": 750,
+            "height": 563,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264856/medium_photo_2021_04_24_13_46_59_a4bf978101.jpg"
+          },
+          "small": {
+            "name": "small_photo_2021-04-24_13-46-59.jpg",
+            "width": 500,
+            "height": 375,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264857/small_photo_2021_04_24_13_46_59_a4bf978101.jpg"
+          }
+        },
+        "id": "60840559208c5f00152fd21b"
+      },
+      {
+        "name": "photo_2021-04-24_13-46-53.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1280,
+        "height": 960,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264854/photo_2021_04_24_13_46_53_4b2007eb46.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_photo_2021-04-24_13-46-53.jpg",
+            "width": 208,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264854/thumbnail_photo_2021_04_24_13_46_53_4b2007eb46.jpg"
+          },
+          "large": {
+            "name": "large_photo_2021-04-24_13-46-53.jpg",
+            "width": 1000,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264855/large_photo_2021_04_24_13_46_53_4b2007eb46.jpg"
+          },
+          "medium": {
+            "name": "medium_photo_2021-04-24_13-46-53.jpg",
+            "width": 750,
+            "height": 563,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264856/medium_photo_2021_04_24_13_46_53_4b2007eb46.jpg"
+          },
+          "small": {
+            "name": "small_photo_2021-04-24_13-46-53.jpg",
+            "width": 500,
+            "height": 375,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619264857/small_photo_2021_04_24_13_46_53_4b2007eb46.jpg"
+          }
+        },
+        "id": "60840559208c5f00152fd21a"
+      },
+      {
+        "name": "21-03-27 11-52-49 7247.jpg",
+        "alternativeText": "Müll sammeln im Teuto",
+        "caption": "Müll sammeln im Teuto",
+        "width": 3024,
+        "height": 4032,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619461498/21_03_27_11_52_49_7247_e3bd4a1137.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_21-03-27 11-52-49 7247.jpg",
+            "width": 117,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619461499/thumbnail_21_03_27_11_52_49_7247_e3bd4a1137.jpg"
+          },
+          "large": {
+            "name": "large_21-03-27 11-52-49 7247.jpg",
+            "width": 750,
+            "height": 1000,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619461500/large_21_03_27_11_52_49_7247_e3bd4a1137.jpg"
+          },
+          "medium": {
+            "name": "medium_21-03-27 11-52-49 7247.jpg",
+            "width": 563,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619461501/medium_21_03_27_11_52_49_7247_e3bd4a1137.jpg"
+          },
+          "small": {
+            "name": "small_21-03-27 11-52-49 7247.jpg",
+            "width": 375,
+            "height": 500,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619461502/small_21_03_27_11_52_49_7247_e3bd4a1137.jpg"
+          }
+        },
+        "id": "60870530d87cbc0015fe4b80"
+      }
+    ],
+    "Title": "Frühjahrsputz im Teuto",
+    "TeaserText": "Mit vollem Einsatz für saubere Wege und Wälder - we love nature",
+    "Text": "\n## Beim Brochterbecker Besentag\n\n\nEinen ersten Erfolg durch unser ehrenamtliches Engagement konnten wir beim **Brochterbecker Besentag** feiern. \n\nMit insgesamt 8 Leuten in drei Teams halfen die NaturFreunde Tecklenburg dabei, in Brochterbeck und auf den umliegenden Waldwegen aufzuräumen und so viel Müll wie möglich zu entfernen. \n\n#### Dabei hat uns auch das Aprilwetter nicht abgeschreckt!^^\nUnsere tatkräftige Unterstützung der **IG Brochterbeck**, die den Besentag initiiert, wurde durch ein leckeres Eis und natürlich saubere Waldwege und Trails entlohnt. \n",
+    "published_at": "2021-04-26T19:02:08.101Z",
+    "TeaserImage": {
+      "name": "photo_2021-04-24_14-35-20.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 719,
+      "height": 459,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619267744/photo_2021_04_24_14_35_20_e308e89fcd.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_photo_2021-04-24_14-35-20.jpg",
+          "width": 244,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619267745/thumbnail_photo_2021_04_24_14_35_20_e308e89fcd.jpg"
+        },
+        "small": {
+          "name": "small_photo_2021-04-24_14-35-20.jpg",
+          "width": 500,
+          "height": 319,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619267746/small_photo_2021_04_24_14_35_20_e308e89fcd.jpg"
+        }
+      },
+      "id": "608410a278a33400158cf649"
+    },
+    "id": "60840ff278a33400158cf645"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "IMG_7350[1].JPG",
+        "alternativeText": "WDR im Teutoburgerwald Brochterbeck, Bocketal",
+        "caption": "WDR im Teutoburgerwald Brochterbeck, Bocketal",
+        "width": 4032,
+        "height": 3024,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414580/IMG_7350_1_399165f9ed.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_7350[1].JPG",
+            "width": 208,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414581/thumbnail_IMG_7350_1_399165f9ed.jpg"
+          },
+          "large": {
+            "name": "large_IMG_7350[1].JPG",
+            "width": 1000,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414582/large_IMG_7350_1_399165f9ed.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_7350[1].JPG",
+            "width": 750,
+            "height": 563,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414583/medium_IMG_7350_1_399165f9ed.jpg"
+          },
+          "small": {
+            "name": "small_IMG_7350[1].JPG",
+            "width": 500,
+            "height": 375,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414584/small_IMG_7350_1_399165f9ed.jpg"
+          }
+        },
+        "id": "6095903d6d59d50015eeb02e"
+      }
+    ],
+    "Title": " IG Outdoorsport Teuto in WDR Lokalzeit",
+    "TeaserText": "Am 16.4.2021 haben wir uns mit dem Regionalförster Berkemeier und dem Waldbesitzer Herrn Storkamp zu einem Gespräch getroffen.",
+    "Text": "Der Drehtag war mit einer Vorbereitungszeit von lediglich 2 Tagen kurzfristig angesetzt. Die Vorarbeit in Form des Flyers \"Fair im Wald\" und die Erarbeitung des Positionspapiers haben jedoch eine solide Basis für das Gespräch geliefert. \nZudem haben sich durch die Zusammenkunft der unterschiedlichen Parteien neue Ansatzmöglichkeiten ergeben, über die wir euch in den nächsten Wochen auf dem laufenden halten.\n",
+    "published_at": "2021-05-07T19:06:04.130Z",
+    "TeaserImage": {
+      "name": "IMG_7350[1].JPG",
+      "alternativeText": "WDR im Teutoburgerwald Brochterbeck, Bocketal",
+      "caption": "WDR im Teutoburgerwald Brochterbeck, Bocketal",
+      "width": 4032,
+      "height": 3024,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414580/IMG_7350_1_399165f9ed.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_IMG_7350[1].JPG",
+          "width": 208,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414581/thumbnail_IMG_7350_1_399165f9ed.jpg"
+        },
+        "large": {
+          "name": "large_IMG_7350[1].JPG",
+          "width": 1000,
+          "height": 750,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414582/large_IMG_7350_1_399165f9ed.jpg"
+        },
+        "medium": {
+          "name": "medium_IMG_7350[1].JPG",
+          "width": 750,
+          "height": 563,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414583/medium_IMG_7350_1_399165f9ed.jpg"
+        },
+        "small": {
+          "name": "small_IMG_7350[1].JPG",
+          "width": 500,
+          "height": 375,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1620414584/small_IMG_7350_1_399165f9ed.jpg"
+        }
+      },
+      "id": "6095903d6d59d50015eeb02e"
+    },
+    "id": "60958f8e6d59d50015eeb02d"
+  },
+  {
+    "Gallery": [
+      {
+        "name": "photo_2021-10-12_21-53-34.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1280,
+        "height": 960,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068505/photo_2021_10_12_21_53_34_a86e5e2af0.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_photo_2021-10-12_21-53-34.jpg",
+            "width": 208,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068505/thumbnail_photo_2021_10_12_21_53_34_a86e5e2af0.jpg"
+          },
+          "large": {
+            "name": "large_photo_2021-10-12_21-53-34.jpg",
+            "width": 1000,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068506/large_photo_2021_10_12_21_53_34_a86e5e2af0.jpg"
+          },
+          "medium": {
+            "name": "medium_photo_2021-10-12_21-53-34.jpg",
+            "width": 750,
+            "height": 563,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068507/medium_photo_2021_10_12_21_53_34_a86e5e2af0.jpg"
+          },
+          "small": {
+            "name": "small_photo_2021-10-12_21-53-34.jpg",
+            "width": 500,
+            "height": 375,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068508/small_photo_2021_10_12_21_53_34_a86e5e2af0.jpg"
+          }
+        },
+        "id": "6165e81c2cf75a0015f108d1"
+      },
+      {
+        "name": "photo_2021-10-12_21-53-39.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 1280,
+        "height": 960,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068505/photo_2021_10_12_21_53_39_807ee65e74.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_photo_2021-10-12_21-53-39.jpg",
+            "width": 208,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068505/thumbnail_photo_2021_10_12_21_53_39_807ee65e74.jpg"
+          },
+          "large": {
+            "name": "large_photo_2021-10-12_21-53-39.jpg",
+            "width": 1000,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068507/large_photo_2021_10_12_21_53_39_807ee65e74.jpg"
+          },
+          "medium": {
+            "name": "medium_photo_2021-10-12_21-53-39.jpg",
+            "width": 750,
+            "height": 563,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068507/medium_photo_2021_10_12_21_53_39_807ee65e74.jpg"
+          },
+          "small": {
+            "name": "small_photo_2021-10-12_21-53-39.jpg",
+            "width": 500,
+            "height": 375,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068508/small_photo_2021_10_12_21_53_39_807ee65e74.jpg"
+          }
+        },
+        "id": "6165e81d2cf75a0015f108d2"
+      },
+      {
+        "name": "photo_2021-10-12_21-53-36.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 960,
+        "height": 1280,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068505/photo_2021_10_12_21_53_36_f9b4022552.jpg",
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_photo_2021-10-12_21-53-36.jpg",
+            "width": 117,
+            "height": 156,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068505/thumbnail_photo_2021_10_12_21_53_36_f9b4022552.jpg"
+          },
+          "large": {
+            "name": "large_photo_2021-10-12_21-53-36.jpg",
+            "width": 750,
+            "height": 1000,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068507/large_photo_2021_10_12_21_53_36_f9b4022552.jpg"
+          },
+          "medium": {
+            "name": "medium_photo_2021-10-12_21-53-36.jpg",
+            "width": 563,
+            "height": 750,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068508/medium_photo_2021_10_12_21_53_36_f9b4022552.jpg"
+          },
+          "small": {
+            "name": "small_photo_2021-10-12_21-53-36.jpg",
+            "width": 375,
+            "height": 500,
+            "path": null,
+            "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068509/small_photo_2021_10_12_21_53_36_f9b4022552.jpg"
+          }
+        },
+        "id": "6165e81d2cf75a0015f108d3"
+      }
+    ],
+    "Text": "Für alle die nicht dabei sein konnten, hier eine kleine Zusammenfassung…\nDas erste Oktober Wochenende haben einige von uns gemeinsam im Naturfreunde-Haus in Oerlinghausen verbracht. Hier haben wir uns auf einer ausgedehnten Tour von Mitgliedern der [Naturfreunde Bielefeld](http://naturfreunde-bielefeld.de/) einige Trails zeigen lassen und uns viele Anregungen für die zukünftige Vereinsarbeit geholt. Aber vor allem haben wir einfach ein tolles, geselliges Wochenende mit Gleichgesinnten verbracht. Es wurde gegrillt und gekickert, wir haben uns den [#Schuttberg.Bielefeld](https://www.instagram.com/schuttberg.bielefeld/) und die Boulderhalle am Meierhof angesehen. Alles in Allem ein großartiges Wochenende und definitiv widerholungswürdig! \nVielen Dank an alle, die sich an der Organisation beteiligt haben und natürlich an Nora und Willi, die auf den Touren für uns den Guide gegeben haben, Martin und Sandra, die uns den Schuttberg gezeigt haben und alle, die dabei waren!\n",
+    "Title": "Naturfreunde-Wochenende in Oerlinghausen",
+    "TeaserText": "Zu Besuch bei den Naturfreunden Bielefeld",
+    "published_at": "2021-10-12T19:57:42.871Z",
+    "TeaserImage": {
+      "name": "photo_2021-10-12_21-47-22.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1280,
+      "height": 663,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068580/photo_2021_10_12_21_47_22_d0be3b3304.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_photo_2021-10-12_21-47-22.jpg",
+          "width": 245,
+          "height": 127,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068581/thumbnail_photo_2021_10_12_21_47_22_d0be3b3304.jpg"
+        },
+        "large": {
+          "name": "large_photo_2021-10-12_21-47-22.jpg",
+          "width": 1000,
+          "height": 518,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068582/large_photo_2021_10_12_21_47_22_d0be3b3304.jpg"
+        },
+        "medium": {
+          "name": "medium_photo_2021-10-12_21-47-22.jpg",
+          "width": 750,
+          "height": 388,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068583/medium_photo_2021_10_12_21_47_22_d0be3b3304.jpg"
+        },
+        "small": {
+          "name": "small_photo_2021-10-12_21-47-22.jpg",
+          "width": 500,
+          "height": 259,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1634068584/small_photo_2021_10_12_21_47_22_d0be3b3304.jpg"
+        }
+      },
+      "id": "6165e8682cf75a0015f108d4"
+    },
+    "id": "61600cbd4694910015294501"
+  },
+  {
+    "Gallery": [],
+    "Title": "Info-Aktion zu \"Fair im Wald\" und \"Dämmerungszeit ist Wildtierzeit\" der IG Outdoorsport Teuto",
+    "Text": "Bei perfektem Wetter und mit guter Laune klärten wir gemeinsam mit den Partner-Vereinen der IG Outdoorsport Teuto an insgesamt sieben Standorten zwischen Riesenbeck und Lienen zu den Themen **\"Fair im Wald\"** und **„Dämmerungszeit ist Wildtierzeit“** auf. Wir führten an unseren Ständen in Tecklenburg und Brochterbeck viele konstruktive Gespräche, klärten Mountainbiker und Wanderer gleichermaßen auf und arbeiteten gegen Vorurteile auf allen Seiten. \n\n**Ein großes Dankeschön geht an die freiwilligen Helfer und alle interessierten und offenen Gesprächspartner!**",
+    "published_at": "2021-09-19T18:33:45.599Z",
+    "TeaserImage": {
+      "name": "DSC_1100 (2).JPG",
+      "alternativeText": "",
+      "caption": "",
+      "width": 5500,
+      "height": 3551,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1632076358/DSC_1100_2_9432088f9d.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_DSC_1100 (2).JPG",
+          "width": 242,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1632076359/thumbnail_DSC_1100_2_9432088f9d.jpg"
+        },
+        "large": {
+          "name": "large_DSC_1100 (2).JPG",
+          "width": 1000,
+          "height": 646,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1632076360/large_DSC_1100_2_9432088f9d.jpg"
+        },
+        "medium": {
+          "name": "medium_DSC_1100 (2).JPG",
+          "width": 750,
+          "height": 484,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1632076361/medium_DSC_1100_2_9432088f9d.jpg"
+        },
+        "small": {
+          "name": "small_DSC_1100 (2).JPG",
+          "width": 500,
+          "height": 323,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1632076362/small_DSC_1100_2_9432088f9d.jpg"
+        }
+      },
+      "id": "6147824a582d750015801da2"
+    },
+    "id": "6147825d582d750015801da3"
+  }
+]

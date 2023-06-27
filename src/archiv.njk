@@ -3,10 +3,10 @@ title: Naturfreunde Tecklenburg - Neuigkeit
 bodyClass: news-single
 layout: base.njk
 pagination:
-  data: neuigkeiten
+  data: archiv
   size: 1
   alias: news
-permalink: 'aktuelles/{{ news.Title | slug | replace("\"", "") }}/'
+permalink: 'aktuelles/archiv/{{ news.Title | slug | replace("\"", "") }}/'
 ---
 {% set gallery = news.Gallery %}
 <link rel="stylesheet" href="{{ '/newsDetail.css' | url }}">
@@ -56,7 +56,7 @@ permalink: 'aktuelles/{{ news.Title | slug | replace("\"", "") }}/'
         </div>
       {% endif %}
     </div>
-    <div class="my-4 d-block d-md-none text-center"><a href="{{ '/aktuelles' | url }}">Zurück zur Übersicht</a></div>
+    <div class="my-4 d-block d-md-none text-center"><a href="{{ '/aktuelles/archiv' | url }}">Zurück zur Übersicht</a></div>
   </section>
 </main>
 

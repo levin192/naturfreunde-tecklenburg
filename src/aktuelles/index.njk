@@ -2,55 +2,41 @@
 title: Naturfreunde Tecklenburg - Neuigkeiten
 bodyClass: news-overview
 layout: base.njk
-pagination:
-  data: neuigkeiten
-  size: 100
-  alias: neuigkeiten
 ---
 <main class="pt-5">
-  <div class="container">
-    <h1>Aktuelles</h1>
-
-    <div class="row gy-4 my-5 position-relative" id="newsOrderRow">
-      {% for news in neuigkeiten|reverse %}
-
-        {% if loop.index == 1 %}
-          {% set delay = 'animate__delay-1s' %}
-        {% elseif loop.index == 2 %}
-          {% set delay = 'animate__delay-2s' %}
-        {% elseif loop.index == 3 %}
-          {% set delay = 'animate__delay-3s' %}
-        {% elseif loop.index == 4 %}
-          {% set delay = 'animate__delay-4s' %}
-        {% else %}
-          {% set delay = 'animate__delay-5s' %}
-        {% endif %}
-
-        {% set publishedDate = news.published_at  | replace("-", "/")  | replace("T", " ") | replace(r/ .*/g, "") %}
-        {% set sortDate = publishedDate | replace("/","") %}
-        {% set readableDate = publishedDate.split("/") | reverse | join('/') %}
-
-        {% set thumbnail = news.TeaserImage.formats.thumbnail %}
-
-        <div data-sort-date="{{ sortDate }}" class="col-md-6 col-xl-3 animate__animated animate__fadeInUp {{ delay }}">
-          <div class="card news-card h-100">
-            {% if thumbnail %}
-              <img src="{{ thumbnail.url }}" alt="{{ news.TeaserImage.alternativeText }}"
-                   loading="lazy" width="{{ thumbnail.width }}" height="{{ thumbnail.height }}" class="card-img-top">
-            {% endif %}
-            <div class="card-body d-flex flex-column">
-              <div class="news-card-date">{{ readableDate }}</div>
-              <h5 class="card-title">{{ news.Title }}</h5>
-              <p class="card-text">{{ news.TeaserText }}</p>
-
-              <a href="/aktuelles/{{ news.Title | slug | replace("\"", "") }}/"
-                 class="btn btn-secondary stretched-link mt-auto d-inline-block">Mehr
-                Lesen</a>
-            </div>
-          </div>
+    <div class="container">
+        <h1>Aktuelles</h1>
+        <div class="row g-4">
+            {% for post in instapostsFormatted %}
+                <div class="col-md-4">
+                    <div class="card news-card js-clamp">
+                        <div class="card-body d-flex flex-column">
+                            <div class="row mb-2 news-card-infos">
+                                <div class="col-md-6">
+                                    <div class="news-card-location">
+                                        {{ post.location }}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="news-card-date new text-md-end">
+                                        {{ post.dateString }}
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="{{ post.displayImage }}" alt="" class="img-fluid card-img-top rounded mb-3">
+                            <div class="news-card-text">
+                                {{ post.caption|safe }}
+                                {% if post.detailLink %}
+                                    <div class="mt-3">
+                                     <a href="{{ post.slug|url }}" class="btn btn-primary m-auto">Alle Bilder ansehen</a>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-      {% endfor %}
     </div>
-  </div>
 </main>
 <script src="{{ '/news.js' | url }}"></script>
