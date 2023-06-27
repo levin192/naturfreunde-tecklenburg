@@ -13,7 +13,9 @@ layout: base.njk
                         <div class="card-body d-flex flex-column">
                             <div class="row mb-2 news-card-infos">
                                 <div class="col-md-6">
-                                    <div class="news-card-location">{{ post.location }}</div>
+                                    <div class="news-card-location">
+                                        {{ post.location }}
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="news-card-date new text-md-end">
@@ -24,7 +26,11 @@ layout: base.njk
                             <img src="{{ post.displayImage }}" alt="" class="img-fluid card-img-top rounded mb-3">
                             <div class="news-card-text">
                                 {{ post.caption|safe }}
-                                {% if post.detailLink %} {{ post.slug }}{% endif %}
+                                {% if post.detailLink %}
+                                    <div class="mt-3">
+                                     <a href="{{ post.slug|url }}" class="btn btn-primary m-auto">Alle Bilder ansehen</a>
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

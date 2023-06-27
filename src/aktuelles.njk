@@ -1,0 +1,41 @@
+---
+title: Naturfreunde Tecklenburg - Neuigkeit
+bodyClass: news-single
+layout: base.njk
+pagination:
+  data: instapostsFormatted
+  size: 1
+  alias: news
+permalink: 'aktuelles/{{ news.slug | slug | replace("\"", "") }}/'
+---
+
+<link rel="stylesheet" href="{{ '/newsDetail.css' | url }}">
+{% if news.TeaserImage.formats.large.url %}
+  <div class="news-cover animate__animated animate__fadeIn">
+    <img src="{{ news.TeaserImage.formats.large.url }}" alt="" class="news-cover-image">
+  </div>
+{% endif %}
+
+<main class="pt-5">
+
+  <section class="container d-flex flex-column">
+    <div class="row gy-5">
+      <div class="col-12">
+        Gallery hier
+      </div>
+      <div class="col-md-6">
+        {{ news.date }}
+      </div>
+      <div class="col-mod-6 text-md-end">
+        {{ news.location }}
+      </div>
+      <div class="col-12">
+        {{ news.caption|safe }}
+      </div>
+    </div>
+
+    <div class="my-4 d-block d-md-none text-center"><a href="{{ '/aktuelles/' | url }}">Zurück zur Übersicht</a></div>
+  </section>
+</main>
+
+<script src="{{ '/newsDetail.js' | url }}"></script>
