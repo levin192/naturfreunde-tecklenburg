@@ -1,0 +1,58 @@
+{
+  "Title": "Naturfreunde Tecklenburg",
+  "Content": "# Wir stellen uns vor\nDie Ortsgruppe Naturfreunde Tecklenburg e.V. setzt sich im Bereich Tecklenburg/Brochterbeck für eine naturverträgliche Nutzung des Teutoburger Waldes ein. Dabei setzen wir unseren Schwerpunkt auf den Bereich Mountainbike.\n\nWir vertreten die Interessen der Mountainbiker*innen vor Behörden, Waldbesitzern und Förstern, indem wir aktiv den Dialog suchen. Wir werden vom Bundesverband der Naturfreunde unterstützt.\n\nWer nicht an unserem Zoom Meeting und der Präsentation teilnehmen konnte, der hat [**hier**](https://www.naturfreunde-tecklenburg.de/pdf/naturfreunde-vorstellung.pdf) die Möglichkeit sich diese nachträglich anzusehen.\nBei Rückfragen stehen wir gerne zur Verfügung!\n          ",
+  "published_at": "2021-04-12T19:36:23.081Z",
+  "HeaderImage": {
+    "name": "WP_20170809_17_12_13_Pro_LI.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "width": 3264,
+    "height": 1840,
+    "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1670836302/WP_20170809_17_12_13_Pro_LI_deaaaaa3b2.jpg",
+    "formats": {
+      "large": {
+        "name": "large_WP_20170809_17_12_13_Pro_LI.jpg",
+        "width": 1000,
+        "height": 564,
+        "path": null,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1670836304/large_WP_20170809_17_12_13_Pro_LI_deaaaaa3b2.jpg"
+      },
+      "medium": {
+        "name": "medium_WP_20170809_17_12_13_Pro_LI.jpg",
+        "width": 750,
+        "height": 423,
+        "path": null,
+        "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1670836304/medium_WP_20170809_17_12_13_Pro_LI_deaaaaa3b2.jpg"
+      }
+    },
+    "id": "6396f05152c2730015495e3b"
+  },
+  "showInterferer": false,
+  "interfererLink": "",
+  "interfererText": "Vorstellungsrunde per Zoom am 20.04. Link folgt!",
+  "MitgliedWerdenText": "Lies dir bitte die [Satzung ](https://www.naturfreunde-tecklenburg.de/pdf/satzung.pdf) durch. Anschließend druckst Du den [Mitgliedsantrag](https://www.naturfreunde-tecklenburg.de/pdf/mitgliedschaft.pdf) aus. Das ausgefüllte Formular schickst Du dann nach Brochterbeck zur folgenden Adresse oder wirfst es direkt ein:\n\n*Naturfreunde Tecklenburg*\n\n*Zu den Klippen 9*\n\n*49545 Tecklenburg-Brochterbeck*\n\nGerne kannst Du uns Deinen Mitgliedsantrag auch eingescannt an unsere E-Mail Adresse [info@naturfreunde-tecklenburg.de](mailto:info@naturfreunde-tecklenburg.de) senden.\n\nUnsere **Mitgliedsbeiträge** jährlich:\n\n- Einzelmitglieder: 50 €\n- Familien inkl. Kids bis 18 Jahren: 72 €\n- Kids & Jugendliche als Einzelmitglieder: 28 €\n",
+  "goalsList": "- Imagepflege der MTB-Community durch Öffentlichkeitsarbeit\n- Lobbyarbeit pro MTB auf kommunaler Ebene\n- Anlaufstelle zum Vermitteln und schlichten für unterschiedliche Waldnutzer*innen\n- Erhaltung und Pflege der Wege durch ehrenamtliches Engagement\n- Aufbau eines Vereinslebens vor Ort\n\nLangfristig möchten wir uns auch in diesen Bereichen engagieren:\n\n- Jugendarbeit\n- Vereinsausfahrten\n- Einbindung in die Entwicklung eines Tourismuskonzeptes",
+  "offeringsText": "- Einen lokalen Ansprechpartner\n- Einen starken Bundesverband mit Erfahrung im Bereich MTB\n- Plattform zum Austausch und Kennenlernen\n- Eine partizipative Vereinsstruktur in der ihr euch aktiv einbringen könnt\n- Interessensvertretung auf politischer Ebene und im Kontakt mit Behörden",
+  "textAfter": "# Ziele der Ortsgruppe Naturfreunde Tecklenburg e.V.\n\nWir bieten Mountainbiker*innen eine Plattform, um miteinander in Kontakt zu treten, sich auszutauschen und gemeinsam die Natur auf dem MTB zu genießen. Die Erhaltung und der Schutz der Natur steht für uns nicht im Widerspruch zu unserem Anspruch diese betreten zu dürfen.\nDaher agieren wir als lokaler Ansprechpartner im Raum Tecklenburg/Brochterbeck für Waldbesitzer, Förster, Wanderer und Behörden. Unsere Aktivitäten werden durch den Austausch mit anderen Vereinen, Initiativen, Unternehmen und Einzelpersonen durch die Teilnahme an der IG Outdoorsport Teuto vervollständigt.",
+  "goalsImage": {
+    "name": "box-2.jpg",
+    "alternativeText": "",
+    "caption": "",
+    "width": 645,
+    "height": 645,
+    "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619175422/box_2_87e4bcb96b.jpg",
+    "formats": {},
+    "id": "6082a7ff84dede4f38fd21ff"
+  },
+  "offeringsImage": {
+    "name": "box-1.jpg",
+    "alternativeText": "Klettern und Mountainbiken im Teutoburger Wald",
+    "caption": "Klettern und Mountainbiken im Teutoburger Wald",
+    "width": 500,
+    "height": 500,
+    "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1625505809/box_1_a63143cb4a.jpg",
+    "formats": {},
+    "id": "6082c04284dede4f38fd2202"
+  },
+  "id": "6074a12e8c2e0d560464f407"
+}

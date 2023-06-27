@@ -1,0 +1,119 @@
+[
+  {
+    "Name": "IG Outdoorsport Teuto",
+    "Link": "https://www.outdoorsport-teuto.de/",
+    "published_at": "2021-04-26T12:10:41.401Z",
+    "Image": {
+      "name": "Outdoorsport Logo.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 189,
+      "height": 218,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619466976/Outdoorsport_Logo_a886df7ac3.png",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Outdoorsport Logo.png",
+          "width": 135,
+          "height": 156,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619466977/thumbnail_Outdoorsport_Logo_a886df7ac3.png"
+        }
+      },
+      "id": "60871ae1d87cbc0015fe4b82"
+    },
+    "id": "6086adafb0a0f465486dcd93"
+  },
+  {
+    "Name": "Bewatrek",
+    "Link": "https://www.bewatrek.de/",
+    "published_at": "2021-04-26T17:15:18.444Z",
+    "Image": {
+      "name": "BewaTrek.jpg",
+      "alternativeText": "BewaTrek",
+      "caption": "",
+      "width": 279,
+      "height": 162,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619185968/Bewa_Trek_709542454f.jpg",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_BewaTrek.jpg",
+          "width": 245,
+          "height": 142,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619185968/thumbnail_Bewa_Trek_709542454f.jpg"
+        }
+      },
+      "id": "6082d131ca75fa00155da916"
+    },
+    "id": "6086f452989d566ab0b4679e"
+  },
+  {
+    "Name": "DIMB",
+    "Link": "https://www.dimb.de/",
+    "published_at": "2021-04-27T16:07:48.123Z",
+    "Image": {
+      "name": "DIMB_Logo_Tagline_CMYK.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 451,
+      "height": 164,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619540135/DIMB_Logo_Tagline_CMYK_ddf177f138.png",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_DIMB_Logo_Tagline_CMYK.png",
+          "width": 245,
+          "height": 89,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1619540136/thumbnail_DIMB_Logo_Tagline_CMYK_ddf177f138.png"
+        }
+      },
+      "id": "608838a82c280c0015344852"
+    },
+    "id": "608836542c280c001534484d"
+  },
+  {
+    "Name": "Fahrrad Helmig",
+    "Link": "https://www.fahrrad-helmig.de/",
+    "published_at": "2021-06-28T11:56:40.748Z",
+    "Image": {
+      "name": "Helmig Logo2.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1735,
+      "height": 457,
+      "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1624881127/Helmig_Logo2_0070c7dea0.png",
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Helmig Logo2.png",
+          "width": 245,
+          "height": 64,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1624881128/thumbnail_Helmig_Logo2_0070c7dea0.png"
+        },
+        "large": {
+          "name": "large_Helmig Logo2.png",
+          "width": 1000,
+          "height": 263,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1624881129/large_Helmig_Logo2_0070c7dea0.png"
+        },
+        "medium": {
+          "name": "medium_Helmig Logo2.png",
+          "width": 750,
+          "height": 198,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1624881130/medium_Helmig_Logo2_0070c7dea0.png"
+        },
+        "small": {
+          "name": "small_Helmig Logo2.png",
+          "width": 500,
+          "height": 132,
+          "path": null,
+          "url": "https://res.cloudinary.com/nft-strapi-upload/image/upload/v1624881131/small_Helmig_Logo2_0070c7dea0.png"
+        }
+      },
+      "id": "60d9b7eb35e00c00152f847c"
+    },
+    "id": "60d9b80f35e00c00152f847d"
+  }
+]
