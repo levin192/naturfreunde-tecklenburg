@@ -1,9 +1,14 @@
 
 .news-gallery-slider {
-  img {
+  img:not(.insta-img) {
     width: 100%;
     height: 455px;
     object-fit: cover;
+  }
+
+  .insta-img {
+    object-fit: cover;
+    max-height: 80vh;
   }
 }
 
@@ -107,6 +112,7 @@
 .js-clamp {
   transition: all ease-in-out .3s;
   cursor: pointer;
+
   &.open {
     & * {
       -webkit-line-clamp: 9999;

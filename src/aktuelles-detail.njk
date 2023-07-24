@@ -1,0 +1,52 @@
+---
+title: Naturfreunde Tecklenburg - Neuigkeit
+bodyClass: news-single
+layout: base.njk
+permalink: 'aktuelles/{{ news.slug | slug | replace("\"", "") }}/'
+pagination:
+    data: instapostsFormatted
+    size: 1
+    alias: news
+---
+{% set replaceMe = news.slug ~ '/' %}
+{% set displayImg = news.displayImage|replace({replaceMe: ''}) %}
+<link rel="stylesheet" href="{{ '/newsDetail.css' | url }}">
+
+<main class="pt-5">
+    <section class="container d-flex flex-column">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-4"><a class="btn btn-outline-primary" href="{{ '/aktuelles/' | url }}">Zurück</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="d-flex h-100">
+                    <div class="text mt-auto">
+                        <h2> {{ news.dateString }}</h2>
+                        <h3>{{ news.location }}</h3>
+                        {{ news.caption|safe }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="news-gallery-slider">
+                    <a href="../{{ displayImg }}" class="lightbox">
+                        <img src="../{{ displayImg }}" alt="" class="img-fluid insta-img">
+                    </a>
+                    {% for img in news.images %}
+                        <a href="{{ img }}" class="lightbox">
+                            <img src="{{ img }}" alt="" class="img-fluid insta-img">
+                        </a>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<script src="{{ '/newsDetail.js' | url }}"></script>
