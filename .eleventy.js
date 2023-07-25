@@ -7,6 +7,7 @@ module.exports = eleventyConfig => {
   //eleventyConfig.addPassthroughCopy('src/fonts')
   eleventyConfig.addPassthroughCopy('src/pdf')
   eleventyConfig.addPassthroughCopy('src/favicon')
+  eleventyConfig.addPassthroughCopy('src/json-cache')
 
   const md = new markdownIt({
     html: true

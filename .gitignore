@@ -126,3 +126,5 @@ dist
 out
 imported
 gen
+json-cache
+json-cache/*

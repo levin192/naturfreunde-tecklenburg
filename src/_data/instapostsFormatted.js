@@ -13,7 +13,6 @@ const { ApifyClient } = require('apify-client')
 const cacheDir = 'src/json-cache/'
 
 module.exports = async () => {
-
   const data = await getScrapedData()
   try {
     return await prepareData(data)
@@ -32,7 +31,7 @@ const prepareData = async (dataJSON) => {
       const result = await scrapeInstaImage(data.displayUrl, data.images)
       // Deconstruct instead
       displayImageUrl = result.displayImage
-      imagesUrls = result.images.map(img=> path.relative('src/aktuelles/aktuelles', img))
+      imagesUrls = result.images.map(img => path.relative('src/aktuelles/aktuelles', img))
     }
     if (cLength > 0 && displayImageUrl.length > 0) {
       const {
@@ -66,7 +65,7 @@ const scrapeInstaImage = async (imageUrl, imagesArray) => {
   checkDir(imgDir)
   if (!fileExists(outputPath)) {
     try {
-      await downloadImage(imageUrl, outputPath)
+      await downloadFile(imageUrl, outputPath)
       imgLoaded = true
     } catch (err) {
       console.error('Error downloading image:', imgHash, err)
@@ -84,7 +83,7 @@ const scrapeInstaImage = async (imageUrl, imagesArray) => {
       let success = false
       if (!fileExists(subOutputPath)) {
         try {
-          await downloadImage(subImg, subOutputPath)
+          await downloadFile(subImg, subOutputPath)
           success = true
         } catch (err) {
           console.error('Error downloading image:', subHash, err)
@@ -155,9 +154,20 @@ const checkDir = (dir) => {
   }
 }
 
-const downloadImage = util.promisify((imageUrl, outputPath, callback) => {
+const downloadFile = util.promisify((fileUrl, outputPath, callback) => {
+  // Check if the file exists
+  if (fileExists(fileUrl)) {
+    // If the file exists, remove it
+    try {
+      fs.unlinkSync(fileUrl)
+    } catch (err) {
+      console.error('Error unlinking file: ', err)
+      return
+    }
+  }
+
   const file = fs.createWriteStream(outputPath)
-  https.get(imageUrl, (response) => {
+  https.get(fileUrl, (response) => {
     response.pipe(file)
     file.on('finish', () => {
       file.close()
@@ -165,7 +175,7 @@ const downloadImage = util.promisify((imageUrl, outputPath, callback) => {
     })
   }).on('error', (err) => {
     fs.unlink(outputPath, () => {
-      console.error('Error downloading image:', err)
+      console.error('Error downloading file: ', err)
       callback(err)
     })
   })
@@ -184,7 +194,7 @@ async function getScrapedData () {
       token: process.env.APIFY_TOKEN,
     })
 
-// Prepare Actor input
+    // Prepare Actor input
     const input = {
       'username': [
         'naturfreunde.tecklenburg'],
@@ -203,6 +213,7 @@ async function getScrapedData () {
     })()
   } else {
     console.info('Scraped data found, loading from local JSON file')
+    await downloadFile(process.env.INSTA_DATA_URL,cachedDataFilePath)
     data = await loadDataFromJSON(cachedDataFilePath)
   }
   return data
@@ -211,8 +222,9 @@ async function getScrapedData () {
 const getDataFromCache = async () => {
   const timeCacheFile = 'timestamp.json'
   const timeCacheFilePath = cacheDir + timeCacheFile
-  const timeStampNow = Math.floor(Date.now() / 1000)
   checkDir(cacheDir)
+  await downloadFile(process.env.TIMESTAMP_URL, timeCacheFilePath)
+  const timeStampNow = Math.floor(Date.now() / 1000)
   if (!fileExists(timeCacheFilePath)) {
     const timeStampJSON = JSON.stringify(timeStampNow)
     await writeFileAsync(timeCacheFilePath, timeStampJSON)
